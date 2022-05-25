@@ -1,92 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vun-mp-BcG">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="VTw-ea-dv4">
-            <objects>
-                <viewController id="1q1-FU-ECG" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1lx-bN-0zz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="QyB-wH-a5g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="cRq-by-etS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UEn-tB-fiy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-776" y="-214"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="HJu-6U-MeI">
-            <objects>
-                <viewController id="66o-V4-mai" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6b6-tx-NxC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="7Hi-fG-Chw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BBN-de-RWL"/>
-                    <navigationItem key="navigationItem" id="Zd6-nb-ccu"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VoJ-mn-JRX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-776" y="470"/>
-        </scene>
-        <!--Item 1-->
+        <!--HOME-->
         <scene sceneID="gH3-Sm-GkB">
             <objects>
                 <viewController id="cP3-WQ-Vif" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1wV-dx-uHN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-qA-ZmR">
-                                <rect key="frame" x="16" y="20" width="147" height="30"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="ExploreUW">
-                                        <attributes>
-                                            <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                            <font key="NSFont" size="24" name="EncodeSansNormal-Black"/>
-                                            <font key="NSOriginalFont" size="17" name="Impact"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
+                            <view contentMode="scaleToFill" id="bRL-sI-t2j">
+                                <rect key="frame" x="0.0" y="95" width="414" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlw-cx-aLx">
+                                        <rect key="frame" x="8" y="60" width="398" height="131"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.33333334329999997" green="0.3843137324" blue="0.4431372583" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <color key="NSStrokeColor" red="0.48235294220000002" green="0.53333336109999996" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osd-Lx-VfH">
+                                        <rect key="frame" x="8" y="22" width="331.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="WELCOME TO EXPLOREUW!">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Xaq-kl-Scf"/>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Xaq-kl-Scf" firstAttribute="trailing" secondItem="tlw-cx-aLx" secondAttribute="trailing" constant="8" id="Adk-lL-9Em"/>
+                                    <constraint firstItem="Osd-Lx-VfH" firstAttribute="leading" secondItem="Xaq-kl-Scf" secondAttribute="leading" constant="8" id="MPv-iI-Bb1"/>
+                                    <constraint firstItem="Osd-Lx-VfH" firstAttribute="leading" secondItem="bRL-sI-t2j" secondAttribute="leadingMargin" id="Yae-Fb-BWp"/>
+                                    <constraint firstItem="tlw-cx-aLx" firstAttribute="leading" secondItem="Xaq-kl-Scf" secondAttribute="leading" constant="8" id="aF8-32-31q"/>
+                                    <constraint firstItem="tlw-cx-aLx" firstAttribute="top" secondItem="Osd-Lx-VfH" secondAttribute="bottom" constant="8" symbolic="YES" id="aIa-Js-SUA"/>
+                                    <constraint firstItem="Osd-Lx-VfH" firstAttribute="top" secondItem="Xaq-kl-Scf" secondAttribute="top" constant="22" id="gFD-LI-aDM"/>
+                                    <constraint firstItem="Xaq-kl-Scf" firstAttribute="trailing" secondItem="Osd-Lx-VfH" secondAttribute="trailing" constant="74.5" id="lf8-64-aRR"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4pz-fF-rq8">
+                                <rect key="frame" x="20" y="44" width="170" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-qA-ZmR">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="32"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="EXPLOREUW">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2kc-b0-0Us"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="3gc-qA-ZmR" firstAttribute="top" secondItem="2kc-b0-0Us" secondAttribute="top" constant="20" id="ESa-1y-2UG"/>
-                            <constraint firstItem="2kc-b0-0Us" firstAttribute="bottom" secondItem="3gc-qA-ZmR" secondAttribute="bottom" constant="381" id="QEu-q3-Gsx"/>
-                            <constraint firstItem="2kc-b0-0Us" firstAttribute="trailing" secondItem="3gc-qA-ZmR" secondAttribute="trailing" constant="157" id="g6b-d3-XaO"/>
-                            <constraint firstItem="3gc-qA-ZmR" firstAttribute="leading" secondItem="1wV-dx-uHN" secondAttribute="leadingMargin" id="re6-Ci-Adm"/>
+                            <constraint firstItem="4pz-fF-rq8" firstAttribute="top" secondItem="2kc-b0-0Us" secondAttribute="top" id="A01-iy-ign"/>
+                            <constraint firstItem="4pz-fF-rq8" firstAttribute="leading" secondItem="1wV-dx-uHN" secondAttribute="leadingMargin" id="kFQ-2s-YFP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="xqs-aM-Q4q"/>
+                    <tabBarItem key="tabBarItem" title="HOME" id="xqs-aM-Q4q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LDB-Ez-gUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-776" y="-822"/>
+            <point key="canvasLocation" x="-777" y="-860"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
         <scene sceneID="F9o-bv-wdj">
             <objects>
-                <tabBarController id="vun-mp-BcG" sceneMemberID="viewController">
+                <tabBarController id="vun-mp-BcG" customClass="ViewController" customModule="ExploreUW" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hd5-ER-Lks">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,18 +113,203 @@
                     </tabBar>
                     <connections>
                         <segue destination="cP3-WQ-Vif" kind="relationship" relationship="viewControllers" id="y1t-VN-EPl"/>
-                        <segue destination="1q1-FU-ECG" kind="relationship" relationship="viewControllers" id="4sb-ZH-Z23"/>
-                        <segue destination="66o-V4-mai" kind="relationship" relationship="viewControllers" id="een-XS-FS5"/>
+                        <segue destination="jEj-qv-2F0" kind="relationship" relationship="viewControllers" id="GHF-PR-qdv"/>
+                        <segue destination="g5O-2g-wxD" kind="relationship" relationship="viewControllers" id="FM7-ab-Zep"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WB4-sT-ETv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1673" y="-215"/>
         </scene>
+        <!--MAJORS-->
+        <scene sceneID="ou5-Ie-65V">
+            <objects>
+                <viewController id="jEj-qv-2F0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bw9-hc-hMV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="g5k-2H-2m5">
+                                <rect key="frame" x="0.0" y="95" width="414" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcm-xb-j2C">
+                                        <rect key="frame" x="8" y="60" width="398" height="131"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.33333334329999997" green="0.3843137324" blue="0.4431372583" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <color key="NSStrokeColor" red="0.48235294220000002" green="0.53333336109999996" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA5-oh-ElF">
+                                        <rect key="frame" x="8" y="22" width="331.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="MAJORS">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Hwn-ZV-xI7"/>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="Wcm-xb-j2C" secondAttribute="trailing" constant="8" id="40u-W7-JKg"/>
+                                    <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="DA5-oh-ElF" secondAttribute="trailing" constant="74.5" id="7qj-Hg-Brm"/>
+                                    <constraint firstItem="DA5-oh-ElF" firstAttribute="top" secondItem="Hwn-ZV-xI7" secondAttribute="top" constant="22" id="IuF-m1-QWh"/>
+                                    <constraint firstItem="DA5-oh-ElF" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="M70-HO-tnC"/>
+                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="top" secondItem="DA5-oh-ElF" secondAttribute="bottom" constant="8" symbolic="YES" id="Nv2-pt-2eH"/>
+                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="dVR-qF-fGB"/>
+                                    <constraint firstItem="DA5-oh-ElF" firstAttribute="leading" secondItem="g5k-2H-2m5" secondAttribute="leadingMargin" id="fkF-Dg-f9I"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-tR-0OD">
+                                <rect key="frame" x="20" y="44" width="170" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxy-yR-bho">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="32"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="EXPLOREUW">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cqg-2A-HVm"/>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="leading" secondItem="Bw9-hc-hMV" secondAttribute="leadingMargin" id="2FE-iw-8kJ"/>
+                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="top" secondItem="cqg-2A-HVm" secondAttribute="top" id="L3M-is-NJN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MAJORS" id="SNd-ke-3bl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ME-oe-WV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="-216"/>
+        </scene>
+        <!--RSO-->
+        <scene sceneID="HsZ-gz-EG9">
+            <objects>
+                <viewController id="g5O-2g-wxD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8t-Vg-m4a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="PoX-zE-WYJ">
+                                <rect key="frame" x="0.0" y="95" width="414" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoY-RU-zEU">
+                                        <rect key="frame" x="8" y="60" width="398" height="131"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, ">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.33333334329999997" green="0.3843137324" blue="0.4431372583" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <color key="NSStrokeColor" red="0.48235294220000002" green="0.53333336109999996" blue="0.59607845540000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtO-xK-VdK">
+                                        <rect key="frame" x="8" y="22" width="331.5" height="30"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="RSOs">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="joh-3Q-vJ0"/>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="joh-3Q-vJ0" firstAttribute="trailing" secondItem="LoY-RU-zEU" secondAttribute="trailing" constant="8" id="CeL-c7-q1F"/>
+                                    <constraint firstItem="DtO-xK-VdK" firstAttribute="leading" secondItem="joh-3Q-vJ0" secondAttribute="leading" constant="8" id="GXv-ib-zxl"/>
+                                    <constraint firstItem="joh-3Q-vJ0" firstAttribute="trailing" secondItem="DtO-xK-VdK" secondAttribute="trailing" constant="74.5" id="Hqa-Mw-CM7"/>
+                                    <constraint firstItem="DtO-xK-VdK" firstAttribute="leading" secondItem="PoX-zE-WYJ" secondAttribute="leadingMargin" id="TR9-YT-hjE"/>
+                                    <constraint firstItem="LoY-RU-zEU" firstAttribute="top" secondItem="DtO-xK-VdK" secondAttribute="bottom" constant="8" symbolic="YES" id="czF-QO-uhL"/>
+                                    <constraint firstItem="LoY-RU-zEU" firstAttribute="leading" secondItem="joh-3Q-vJ0" secondAttribute="leading" constant="8" id="hBf-wB-y3X"/>
+                                    <constraint firstItem="DtO-xK-VdK" firstAttribute="top" secondItem="joh-3Q-vJ0" secondAttribute="top" constant="22" id="oxV-Aq-S3s"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-BW-3dU">
+                                <rect key="frame" x="20" y="44" width="170" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pD-8y-2ML">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="32"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="EXPLOREUW">
+                                                <attributes>
+                                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                    <font key="NSFont" size="24" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="coi-da-wAg"/>
+                        <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GDh-BW-3dU" firstAttribute="top" secondItem="coi-da-wAg" secondAttribute="top" id="1FQ-B1-iSL"/>
+                            <constraint firstItem="GDh-BW-3dU" firstAttribute="leading" secondItem="A8t-Vg-m4a" secondAttribute="leadingMargin" id="CZG-OH-3mw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="RSO" id="DlC-dX-VbD"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGv-6Y-UGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778" y="439"/>
+        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
