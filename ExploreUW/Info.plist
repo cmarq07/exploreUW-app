@@ -2,6 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fontfabric - UniSansBook.otf</string>
+		<string>Fontfabric - UniSansBookItalic.otf</string>
+		<string>Fontfabric - UniSansLight.otf</string>
+		<string>Fontfabric - UniSansLightItalic.otf</string>
+		<string>Fontfabric - UniSansRegularItalic.otf</string>
+		<string>Open Sans 300.ttf</string>
+		<string>Open Sans 300italic.ttf</string>
+		<string>Open Sans 600.ttf</string>
+		<string>Open Sans 600italic.ttf</string>
+		<string>Open Sans 700.ttf</string>
+		<string>Open Sans 700italic.ttf</string>
+		<string>Open Sans 800.ttf</string>
+		<string>Open Sans 800italic.ttf</string>
+		<string>Open Sans Condensed 300.ttf</string>
+		<string>Open Sans Condensed 300italic.ttf</string>
+		<string>Open Sans italic.ttf</string>
+		<string>Open Sans regular.ttf</string>
+		<string>EncodeSansNormal-100-Thin.ttf</string>
+		<string>EncodeSansNormal-200-ExtraLight.ttf</string>
+		<string>EncodeSansNormal-300-Light.ttf</string>
+		<string>EncodeSansNormal-400-Regular.ttf</string>
+		<string>EncodeSansNormal-500-Medium.ttf</string>
+		<string>EncodeSansNormal-600-SemiBold.ttf</string>
+		<string>EncodeSansNormal-700-Bold.ttf</string>
+		<string>EncodeSansNormal-800-ExtraBold.ttf</string>
+		<string>EncodeSansNormal-900-Black.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
