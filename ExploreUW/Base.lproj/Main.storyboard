@@ -124,7 +124,7 @@
         <!--MAJORS-->
         <scene sceneID="ou5-Ie-65V">
             <objects>
-                <viewController id="jEj-qv-2F0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="majors" id="jEj-qv-2F0" customClass="MajorsViewController" customModule="ExploreUW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bw9-hc-hMV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,17 +168,26 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="drq-VA-w1g">
+                                        <rect key="frame" x="0.0" y="253" width="414" height="466"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Hwn-ZV-xI7"/>
                                 <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="Wcm-xb-j2C" secondAttribute="trailing" constant="8" id="40u-W7-JKg"/>
+                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="7qg-p0-5es"/>
                                     <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="DA5-oh-ElF" secondAttribute="trailing" constant="74.5" id="7qj-Hg-Brm"/>
+                                    <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="Wcm-xb-j2C" secondAttribute="trailing" constant="8" id="Euc-PI-C0D"/>
                                     <constraint firstItem="DA5-oh-ElF" firstAttribute="top" secondItem="Hwn-ZV-xI7" secondAttribute="top" constant="22" id="IuF-m1-QWh"/>
                                     <constraint firstItem="DA5-oh-ElF" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="M70-HO-tnC"/>
-                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="top" secondItem="DA5-oh-ElF" secondAttribute="bottom" constant="8" symbolic="YES" id="Nv2-pt-2eH"/>
-                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="dVR-qF-fGB"/>
+                                    <constraint firstItem="drq-VA-w1g" firstAttribute="top" secondItem="Wcm-xb-j2C" secondAttribute="bottom" constant="62" id="THI-Xe-ecZ"/>
+                                    <constraint firstItem="drq-VA-w1g" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" id="dhw-8I-Gsw"/>
                                     <constraint firstItem="DA5-oh-ElF" firstAttribute="leading" secondItem="g5k-2H-2m5" secondAttribute="leadingMargin" id="fkF-Dg-f9I"/>
+                                    <constraint firstItem="Wcm-xb-j2C" firstAttribute="top" secondItem="DA5-oh-ElF" secondAttribute="bottom" constant="8" symbolic="YES" id="k3y-dM-1QN"/>
+                                    <constraint firstAttribute="bottom" secondItem="drq-VA-w1g" secondAttribute="bottom" id="xDJ-re-Ovm"/>
+                                    <constraint firstItem="drq-VA-w1g" firstAttribute="trailing" secondItem="Hwn-ZV-xI7" secondAttribute="trailing" id="yck-6v-rnx"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hJ7-tR-0OD">
@@ -211,10 +220,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="MAJORS" id="SNd-ke-3bl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="MajorsTable" destination="drq-VA-w1g" id="hfe-w3-S2M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ME-oe-WV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-778" y="-216"/>
+            <point key="canvasLocation" x="-778.26086956521749" y="-216.29464285714286"/>
         </scene>
         <!--RSO-->
         <scene sceneID="HsZ-gz-EG9">

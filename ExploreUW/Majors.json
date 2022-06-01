@@ -1,0 +1,808 @@
+[
+    {
+        "major_name": "Art",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Interdisciplinary Visual Art, Painting and Drawing, Photomedia, Three-Dimensional Forum: Ceramics. Glass. Sculpture"],
+        "prerequisites": "{\"min_gpa\":\"2.5\", \"min_art_credits\":\"5\", \"applicant_level\":\"baccalaureate\"}",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Art History",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "{\"min_gpa\":\"2.5\", \"min_art_credits\":\"5\", \"applicant_level\":\"baccalaureate\"}",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Music Composition",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Dance",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Creative Studies, Dance Studies"],
+        "prerequisites": "{\"min_gpa\":\"2.0\", \"min_core_dance_credits\":\"5\", \"min_core_technical_course\":\"1\"}",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Design",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Industrial Design, Interaction Design, Visual Communication Design"],
+        "prerequisites": "{\"min_gpa\":\"2.5\", \"min_art_credits\": {\"number\": \"5\", \"min_gpa\": \"2.5\"}, \"applicant_level\":\"baccalaureate\"}",
+        "minor": "FALSE",
+        "notes": "Current UW freshman who have taken or will take DESIGN 166 and receive a 3.7 GPA in the course will be automatically granted admission to the major. Otherwise apply regularly"
+    },
+    {
+        "major_name": "Drama",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Performance, Design"],
+        "prerequisites": "{\"course\":[\"DRAMA 201\"]}",
+        "minor": "FALSE",
+        "notes": "No audition is required to enter the program"
+    },
+    {
+        "major_name": "Ethnomusicology",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Guitar",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Jazz Studies",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Music",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Music History, Voice, Early Music, Music Theory, Instrumental"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Music Education",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Orchestral Instruments",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Organ (Music)",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Percussion",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": ["Orchestral Percussion, Mallet Keyboard"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Piano",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Voice (Music)",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Arts",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Asian Languages and Culture",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": [],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Chinese",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE",
+        "notes": "Any student with good academic standing can declare this major at any time"
+    },
+    {
+        "major_name": "Cinema and Media Studies",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "{\"min_gpa\":\"2.0\", \"requirement\":\"English Composition\", \"course\": [\"CMS 270\", \"CMS 271\", \"CMS 272\", \"CMS 273\", \"CMS 274\", \"CMS 275\"]}",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Classical Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Classics",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Comparative History of Ideas",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Danish",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "English",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": ["Creative Writing"],
+        "prerequisites": "{\"min_gpa\":\"2.0\", \"min_english_gpa\":\"2.0\"}",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Finnish",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "French",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "German Studies",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Greek",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Japanese",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Jewish Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Korean",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Latin",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Linguistics",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Humanities",
+        "tracks": ["Romance Linguistics"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Applied and Computational Mathematical Sciences (ACMS)",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["Biological and Life Sciences, Discrete Mathematics and Algorithms, Engineering and Physical Sciences, Mathematical Economics and Quantitative Finance, Scientific Computing and Numerical Algorithms, Social and Behavioral Sciences, Data Sciences and Statistics"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Applied Mathematics",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Astronomy",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Biochemistry",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Biology",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["Ecology. Evolution. and Conservation, General (BA), General (BS), Molecular. Cellular. and Development, Physiology, Plant"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Chemistry",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["BA, BS, ACS Certified BS"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Computational Finance and Risk Management",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Computer Science",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["Data Science"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Mathematics",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["Comprehensive (BS), Philosophy (BA), Standard (BA), Teacher Preparation (BA)"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Microbiology",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Neuroscience",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Physics",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": ["Comprehensive Physics, Applied Physics, Biophysics, Teacher Preparation"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Psychology",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Speech and Hearing Sciences",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Statistics",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Natural Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "American Ethnic Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["African American Studies, Asian/Pacific American Studies, Chicano Studies, Comparative American Ethnic Studies"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "American Indian Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Anthropology",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["Anthropology of Globalization, Archaeological Sciences, Human Evolutionary Biology, Medical Anthropology and Global Health, Indigenous Archaeology"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Asian Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Communication",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["Journalism and Public Interest Communication"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Comparative Religion",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Economics",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "European Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Gender, Women, and Sexuality Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Geography",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["Data Science, Cities. Citizenship. and Migration, Environment. Economy. and Sustainability, Globalization. Health. and Development GIS, Mapping, and Society"],
+        "prerequisites": "{\"min_gpa\":\"2.0\", \"min_geog_course\": {\"number\": \"1\", \"min_gpa\": \"2.0\"}}",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Global and Regional Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "History",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["History of Empire and Colonialism, History of Religion and Society, History of Race. Gender. and Power, History of War and Society"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "History and Philosophy of Science",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Individualized Studies",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["Disability Studies"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Integrated Social Sciences",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Latin American and Caribbean Studies",
+        "major_type": "Open Major",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Law, Societies, and Justice (LSJ)",
+        "major_type": "Capacity-Constrained",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Philosophy",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Political Science",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": ["Political Economy, International Security"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Sociology",
+        "major_type": "Minimum Requirement",
+        "college": "Arts and Sciences",
+        "department": "Social Sciences",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Architectural Design",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Architecture",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Community, Environment, and Planning",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Construction Management",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Landscape Architecture",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Real Estate",
+        "major_type": "Minimum Requirement",
+        "college": "College of Built Environments",
+        "department": "",
+        "tracks": []
+        "prerequisites": "{\"course\":{\"course_name\": \"RE 250\", \"min_gpa\": \"2.0\"}}",
+        "minor": "TRUE",
+        "notes": "Anyone meeting the prerequisites with good academic standing can declare this major at any time"
+    },
+    {
+        "major_name": "Early Care and Education",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Education",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Early Childhood and Family Studies",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Education",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Education, Communities, and Organizations",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Education",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Aeronautics and Astronautics",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Bioengineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": ["Data Science, Nanoscience and Molecular Engineering"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Chemical Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": ["Nanoscience and Molecular Engineering"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Civil Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Computer Science and Engineering (CSE)",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE",
+        "notes": "Any student not granted direct admission to CSE should reconsider majors, or schools if Computer Science is your intended goal."
+    },
+    {
+        "major_name": "Electrical Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": ["Nanoscience and Molecular Engineering"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Environmental Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Human Centered Design and Engineering (HCDE)",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Industrial Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": []
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Materials Science and Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": ["Nanoscience and Molecular Engineering"],
+        "prerequisites": "",
+        "minor": "TRUE"
+    },
+    {
+        "major_name": "Mechanical Engineering",
+        "major_type": "Capacity-Constrained",
+        "college": "College of Engineering",
+        "department": "",
+        "tracks": ["Biomechanics, Mechatronics, Nanoscience and Molecular Engineering"],
+        "prerequisites": "",
+        "minor": "FALSE"
+    },
+    {
+        "major_name": "Informatics",
+        "major_type": "Capacity-Constrained",
+        "college": "Information School",
+        "department": "",
+        "tracks": ["Biomedical and Health Informatics, Data Science, Human-Computer Interaction, Information Architecture, Information Assurance and Cybersecurity, Custom Track"],
+        "prerequisites": "{\"min_gpa\":\"2.0\"}",
+        "minor": "TRUE"
+    }
+]

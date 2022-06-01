@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="EncodeSansNormal-500-Medium.ttf">
+            <string>EncodeSansNormal-Medium</string>
+        </array>
+        <array key="EncodeSansNormal-600-SemiBold.ttf">
+            <string>EncodeSansNormal-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="majorCell" rowHeight="318" id="KGk-i7-Jjw" customClass="MajorViewCell" customModule="ExploreUW" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="318"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="318"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xpd-PV-tSx">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MajorName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" preferredMaxLayoutWidth="201" translatesAutoresizingMaskIntoConstraints="NO" id="PVo-6K-eIr">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="45"/>
+                                <fontDescription key="fontDescription" name="EncodeSansNormal-Medium" family="Encode Sans Normal" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
+                        <rect key="frame" x="0.0" y="53" width="73.5" height="24.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="College">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="24" name="UniSansRegular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
+                        <rect key="frame" x="0.0" y="85.5" width="86.5" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Department">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="UniSansBook"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
+                        <rect key="frame" x="209" y="0.0" width="44.5" height="49"/>
+                        <attributedString key="attributedText">
+                            <fragment content="CC">
+                                <attributes>
+                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                    <font key="NSFont" size="36" name="EncodeSansNormal-Black"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <size key="shadowOffset" width="0.0" height="4"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
+                        <rect key="frame" x="0.0" y="111.5" width="56.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
+                        <rect key="frame" x="0.0" y="142.5" width="320" height="49.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="18" name="OpenSans"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
+                        <rect key="frame" x="0.0" y="200.5" width="117.5" height="22.5"/>
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="8.5" id="22h-nR-JC8"/>
+                    <constraint firstItem="xpd-PV-tSx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EOh-K3-wCb"/>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="8.5" id="OVt-vi-NAB"/>
+                    <constraint firstItem="nmU-ZI-h8G" firstAttribute="top" secondItem="3zs-fF-5TP" secondAttribute="bottom" constant="8" symbolic="YES" id="Ph5-Af-10L"/>
+                    <constraint firstItem="qJF-OW-Uct" firstAttribute="leading" secondItem="xpd-PV-tSx" secondAttribute="trailing" constant="8" symbolic="YES" id="SCw-ls-cBH"/>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TSN-Mi-EC3"/>
+                    <constraint firstAttribute="bottom" secondItem="iF8-i2-Ab8" secondAttribute="bottom" constant="95" id="Xwx-hx-tsW"/>
+                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="top" secondItem="A7u-So-sHS" secondAttribute="bottom" constant="8.5" id="are-0S-IaB"/>
+                    <constraint firstAttribute="trailing" secondItem="A7u-So-sHS" secondAttribute="trailing" id="b9f-AA-uzn"/>
+                    <constraint firstItem="xpd-PV-tSx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bJE-2G-qsn"/>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eaE-ab-Nn2"/>
+                    <constraint firstItem="nmU-ZI-h8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ecK-Qi-exa"/>
+                    <constraint firstItem="KWh-Tq-lId" firstAttribute="leading" secondItem="3zs-fF-5TP" secondAttribute="leading" id="hkg-Rb-HD0"/>
+                    <constraint firstItem="KWh-Tq-lId" firstAttribute="top" secondItem="xpd-PV-tSx" secondAttribute="bottom" constant="8" symbolic="YES" id="kae-Rb-MVy"/>
+                    <constraint firstItem="xpd-PV-tSx" firstAttribute="top" secondItem="qJF-OW-Uct" secondAttribute="top" id="nme-DM-fVf"/>
+                    <constraint firstItem="xpd-PV-tSx" firstAttribute="leading" secondItem="KWh-Tq-lId" secondAttribute="leading" id="orp-Kc-RMg"/>
+                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q7y-AC-PJB"/>
+                    <constraint firstItem="3zs-fF-5TP" firstAttribute="top" secondItem="KWh-Tq-lId" secondAttribute="bottom" constant="8" symbolic="YES" id="u8D-xR-ct5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collegeLabel" destination="KWh-Tq-lId" id="fyY-v2-KhP"/>
+                <outlet property="deptLabel" destination="3zs-fF-5TP" id="7DR-aA-8Gj"/>
+                <outlet property="majorNameLabel" destination="PVo-6K-eIr" id="vE9-8x-WIO"/>
+                <outlet property="majorTypeLabel" destination="qJF-OW-Uct" id="eLW-Qg-cz2"/>
+            </connections>
+            <point key="canvasLocation" x="-139.13043478260872" y="48.214285714285715"/>
+        </tableViewCell>
+    </objects>
+</document>
