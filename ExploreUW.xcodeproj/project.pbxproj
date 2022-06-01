@@ -146,7 +146,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
         0A21D769283DC8CD009A8B16 /* Fonts */ = {
             isa = PBXGroup;
             children = (
@@ -199,8 +198,6 @@
             path = Majors;
             sourceTree = "<group>";
         };
-=======
->>>>>>> 4ef39cde940542e1ad4b36a6d275a176ab825391
         0AD24BBB2836FCC20048C828 = {
             isa = PBXGroup;
             children = (
@@ -224,12 +221,9 @@
         0AD24BC62836FCC20048C828 /* ExploreUW */ = {
             isa = PBXGroup;
             children = (
-<<<<<<< HEAD
                 0A2EA0B8284572B800664FA1 /* Data */,
                 0A21D769283DC8CD009A8B16 /* Fonts */,
                 0A2EA0BD284578E900664FA1 /* Majors */,
-=======
->>>>>>> 4ef39cde940542e1ad4b36a6d275a176ab825391
                 0AD24BC72836FCC20048C828 /* AppDelegate.swift */,
                 0AD24BC92836FCC20048C828 /* SceneDelegate.swift */,
                 0AD24BCB2836FCC20048C828 /* ViewController.swift */,
