@@ -39,7 +39,7 @@ class MajorsViewController: UIViewController {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
                                                  ofType: "json"),
-                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
                 return jsonData
             }
         } catch {
@@ -56,6 +56,7 @@ class MajorsViewController: UIViewController {
             return decodedData
         } catch {
             print("Decoding error -- returning nothing")
+            print(error)
             return nil
         }
     }
@@ -88,9 +89,9 @@ extension MajorsViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "majorCell", for: indexPath) as?  MajorViewCell {
             
             // Get the current major matching with the data
-//            let currentMajor = data[indexPath.row]
-//            cell.configureCell(majors: currentMajor)
-
+            let currentMajor = majors[indexPath.row]
+            cell.configureCell(major: currentMajor)
+            
             // Return the configured cell
             return cell
         }
