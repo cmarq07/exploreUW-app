@@ -14,6 +14,7 @@ class MajorViewCell: UITableViewCell {
     @IBOutlet weak var majorTypeLabel: UILabel!
     @IBOutlet weak var collegeLabel: UILabel!
     @IBOutlet weak var deptLabel: UILabel!
+    @IBOutlet weak var tracksLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,9 +33,10 @@ class MajorViewCell: UITableViewCell {
         let majorTypeLong = major.majorType
         let college = major.college
         let department = major.department
-        let tracks = major.tracks
+        let tracks = major.tracks!
         let prerequisites = major.prerequisites
         let hasMinor = major.hasMinor
+        
         
         var majorTypeShort = ""
         if(majorTypeLong.contains(" ")) {
@@ -46,10 +48,17 @@ class MajorViewCell: UITableViewCell {
             majorTypeShort = "\(Array(arr[0])[0])\(Array(arr[1])[0])"
         }
         
+        //var tracksArray: [String] = tracks.components(separatedBy: ", ")
+        var trackString = ""
+        for track in tracks {
+            trackString += track + ", "
+        }
+        
         self.majorNameLabel.text = majorName
         self.majorTypeLabel.text = majorTypeShort
         self.collegeLabel.text = college
         self.deptLabel.text = department
+        self.tracksLabel.text = trackString
     }
     
 }

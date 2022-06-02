@@ -14,6 +14,9 @@
         <array key="EncodeSansNormal-600-SemiBold.ttf">
             <string>EncodeSansNormal-SemiBold</string>
         </array>
+        <array key="EncodeSansNormal-900-Black.ttf">
+            <string>EncodeSansNormal-Black</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -61,17 +64,10 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
                         <rect key="frame" x="209" y="0.0" width="44.5" height="49"/>
-                        <attributedString key="attributedText">
-                            <fragment content="CC">
-                                <attributes>
-                                    <color key="NSColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
-                                    <font key="NSFont" size="36" name="EncodeSansNormal-Black"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-Black" family="Encode Sans Normal" pointSize="36"/>
+                        <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                         <size key="shadowOffset" width="0.0" height="4"/>
@@ -130,6 +126,7 @@
                 <outlet property="deptLabel" destination="3zs-fF-5TP" id="7DR-aA-8Gj"/>
                 <outlet property="majorNameLabel" destination="PVo-6K-eIr" id="vE9-8x-WIO"/>
                 <outlet property="majorTypeLabel" destination="qJF-OW-Uct" id="eLW-Qg-cz2"/>
+                <outlet property="tracksLabel" destination="A7u-So-sHS" id="70M-iF-QXo"/>
             </connections>
             <point key="canvasLocation" x="-139.13043478260872" y="48.214285714285715"/>
         </tableViewCell>

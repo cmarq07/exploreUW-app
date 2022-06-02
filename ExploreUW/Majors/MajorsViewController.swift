@@ -44,7 +44,7 @@ class Major {
 class MajorsViewController: UIViewController {
     
     // Data
-    var major1 = Major(majorName: "Informatics", majorType: "Capacity-Constrained", college: "Information School", department: nil, tracks: [], prerequisites: nil, hasMinor: true, notes: nil)
+    var major1 = Major(majorName: "Informatics", majorType: "Capacity-Constrained", college: "Information School", department: nil, tracks: ["Biomedical and Health Informatics", "Data Science", "Human-Computer Interaction", "Information Architecture", "Information Assurance and Cybersecurity", "Custom Track"], prerequisites: nil, hasMinor: true, notes: nil)
     var data: [Major] = []
     
     // Outlets
@@ -52,10 +52,6 @@ class MajorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let tracksString = "Biomedical and Health Informatics, Data Science, Human-Computer Interaction, Information Architecture, Information Assurance and Cybersecurity, Custom Track"
-        let tracksArray = tracksString.components(separatedBy: ", ")
-        major1.tracks = tracksArray
         
         data.append(major1)
         // Do any additional setup after loading the view.
