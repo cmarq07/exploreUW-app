@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "EXPLOREUW"; ObjectID = "2pD-8y-2ML"; */
+"2pD-8y-2ML.text" = "EXPLOREUW";
+
+/* Class = "UILabel"; text = "EXPLOREUW"; ObjectID = "3gc-qA-ZmR"; */
+"3gc-qA-ZmR.text" = "EXPLOREUW";
+
+/* Class = "UILabel"; text = "MAJORS"; ObjectID = "DA5-oh-ElF"; */
+"DA5-oh-ElF.text" = "MAJORS";
+
+/* Class = "UITabBarItem"; title = "RSOs"; ObjectID = "DlC-dX-VbD"; */
+"DlC-dX-VbD.title" = "RSOs";
+
+/* Class = "UILabel"; text = "RSOs"; ObjectID = "DtO-xK-VdK"; */
+"DtO-xK-VdK.text" = "RSOs";
+
+/* Class = "UILabel"; text = "EXPLOREUW"; ObjectID = "Fxy-yR-bho"; */
+"Fxy-yR-bho.text" = "EXPLOREUW";
+
+/* Class = "UILabel"; text = "WELCOME TO EXPLOREUW!"; ObjectID = "Osd-Lx-VfH"; */
+"Osd-Lx-VfH.text" = "WELCOME TO EXPLOREUW!";
+
+/* Class = "UITabBarItem"; title = "MAJORS"; ObjectID = "SNd-ke-3bl"; */
+"SNd-ke-3bl.title" = "MAJORS";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "Xya-AE-vip"; */
+"Xya-AE-vip.text" = "Date";
+
+/* Class = "UITabBarItem"; badgeValue = "3"; ObjectID = "ccJ-2a-ACN"; */
+"ccJ-2a-ACN.badgeValue" = "3";
+
+/* Class = "UITabBarItem"; title = "EVENTS"; ObjectID = "ccJ-2a-ACN"; */
+"ccJ-2a-ACN.title" = "EVENTS";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "h2d-oN-x5e"; */
+"h2d-oN-x5e.text" = "Title";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "nsk-aJ-JKm"; */
+"nsk-aJ-JKm.text" = "Description";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "tGo-Nn-UgT"; */
+"tGo-Nn-UgT.text" = "Date";
+
+/* Class = "UITabBarItem"; title = "HOME"; ObjectID = "xqs-aM-Q4q"; */
+"xqs-aM-Q4q.title" = "HOME";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yhH-oF-lxf"; */
+"yhH-oF-lxf.text" = "Title";
