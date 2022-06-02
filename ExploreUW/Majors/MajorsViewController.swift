@@ -6,46 +6,12 @@
 //
 
 import UIKit
-import Foundation
-
-// Major Class
-class Major {
-    
-    // Properties
-    var majorName: String
-    var majorType: String
-    var college: String
-    var department: String?
-    var tracks: [String]?
-    var prerequisites: AnyObject?
-    var hasMinor: Bool
-    var notes: String?
-    
-    init() {
-        self.majorName = ""
-        self.majorType = ""
-        self.college = ""
-        self.department = ""
-        self.hasMinor = false
-    }
-    
-    init(majorName: String, majorType: String, college: String, department: String?, tracks: [String]?, prerequisites: AnyObject?, hasMinor: Bool, notes: String?) {
-        self.majorName = majorName
-        self.majorType = majorType
-        self.college = college
-        self.department = department
-        self.tracks = tracks
-        self.prerequisites = prerequisites
-        self.hasMinor = hasMinor
-        self.notes = notes
-    }
-}
 
 class MajorsViewController: UIViewController {
     
     // Data
-    var major1 = Major(majorName: "Informatics", majorType: "Capacity-Constrained", college: "Information School", department: nil, tracks: ["Biomedical and Health Informatics", "Data Science", "Human-Computer Interaction", "Information Architecture", "Information Assurance and Cybersecurity", "Custom Track"], prerequisites: nil, hasMinor: true, notes: nil)
-    var data: [Major] = []
+    //var major = Major(majorName: "Informatics", majorType: "Capacity-Constrained", college: "Information School", department: nil, tracks: ["Biomedical and Health Informatics", "Data Science", "Human-Computer Interaction", "Information Architecture", "Information Assurance and Cybersecurity", "Custom Track"], prerequisites: nil, hasMinor: true, notes: nil)
+    var majors: [Major] = []
     
     // Outlets
     @IBOutlet weak var MajorsTable: UITableView!
@@ -53,7 +19,11 @@ class MajorsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        data.append(major1)
+        if let localData = self.readLocalFile(forName: "Majors") {
+            let parseData = self.parse(jsonData: localData)
+            majors = parseData!
+        }
+        //data.append(major)
         // Do any additional setup after loading the view.
         
         // Register the "MajorViewCell" nib file for the TableView
@@ -62,6 +32,32 @@ class MajorsViewController: UIViewController {
         // Set TableView data source and delegate
         MajorsTable.delegate = self
         MajorsTable.dataSource = self
+    }
+    
+    // Function to read the Local Files
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
+    
+    // Function to parse the json data read from the file
+    private func parse(jsonData: Data) -> [Major]? {
+        do {
+            let decodedData = try JSONDecoder().decode([Major].self, from: jsonData) // Should be an array of majors
+            return decodedData
+        } catch {
+            print("Decoding error -- returning nothing")
+            return nil
+        }
     }
 }
 
@@ -77,7 +73,7 @@ extension MajorsViewController: UITableViewDataSource {
     
     // How many rows should be in each section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return majors.count
     }
     
     // How many sections there should be (default 1)
@@ -92,8 +88,8 @@ extension MajorsViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "majorCell", for: indexPath) as?  MajorViewCell {
             
             // Get the current major matching with the data
-            let currentMajor = data[indexPath.row]
-            cell.configureCell(major: currentMajor)
+//            let currentMajor = data[indexPath.row]
+//            cell.configureCell(majors: currentMajor)
 
             // Return the configured cell
             return cell

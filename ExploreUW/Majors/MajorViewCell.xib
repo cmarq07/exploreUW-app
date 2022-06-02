@@ -40,7 +40,7 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
-                        <rect key="frame" x="0.0" y="53" width="73.5" height="24.5"/>
+                        <rect key="frame" x="0.0" y="53" width="73.5" height="24"/>
                         <attributedString key="attributedText">
                             <fragment content="College">
                                 <attributes>
@@ -53,7 +53,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
-                        <rect key="frame" x="0.0" y="85.5" width="86.5" height="18"/>
+                        <rect key="frame" x="0.0" y="85" width="86.5" height="18"/>
                         <attributedString key="attributedText">
                             <fragment content="Department">
                                 <attributes>
@@ -73,13 +73,13 @@
                         <size key="shadowOffset" width="0.0" height="4"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
-                        <rect key="frame" x="0.0" y="111.5" width="56.5" height="22.5"/>
+                        <rect key="frame" x="0.0" y="111" width="56.5" height="22.5"/>
                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
-                        <rect key="frame" x="0.0" y="142.5" width="320" height="49.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
+                        <rect key="frame" x="0.0" y="136" width="320" height="75"/>
                         <attributedString key="attributedText">
                             <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
                                 <attributes>
@@ -92,7 +92,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
-                        <rect key="frame" x="0.0" y="200.5" width="117.5" height="22.5"/>
+                        <rect key="frame" x="0.0" y="219" width="117.5" height="22.5"/>
                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -100,23 +100,23 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="8.5" id="22h-nR-JC8"/>
                     <constraint firstItem="xpd-PV-tSx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EOh-K3-wCb"/>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="8.5" id="OVt-vi-NAB"/>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NUN-MC-F0E"/>
                     <constraint firstItem="nmU-ZI-h8G" firstAttribute="top" secondItem="3zs-fF-5TP" secondAttribute="bottom" constant="8" symbolic="YES" id="Ph5-Af-10L"/>
+                    <constraint firstAttribute="trailing" secondItem="iF8-i2-Ab8" secondAttribute="trailing" constant="202.5" id="Pso-oD-zYf"/>
                     <constraint firstItem="qJF-OW-Uct" firstAttribute="leading" secondItem="xpd-PV-tSx" secondAttribute="trailing" constant="8" symbolic="YES" id="SCw-ls-cBH"/>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TSN-Mi-EC3"/>
-                    <constraint firstAttribute="bottom" secondItem="iF8-i2-Ab8" secondAttribute="bottom" constant="95" id="Xwx-hx-tsW"/>
-                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="top" secondItem="A7u-So-sHS" secondAttribute="bottom" constant="8.5" id="are-0S-IaB"/>
-                    <constraint firstAttribute="trailing" secondItem="A7u-So-sHS" secondAttribute="trailing" id="b9f-AA-uzn"/>
+                    <constraint firstAttribute="trailing" secondItem="A7u-So-sHS" secondAttribute="trailing" id="Tuc-Ii-1AS"/>
+                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WwL-7d-YO1"/>
                     <constraint firstItem="xpd-PV-tSx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bJE-2G-qsn"/>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eaE-ab-Nn2"/>
                     <constraint firstItem="nmU-ZI-h8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ecK-Qi-exa"/>
+                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="top" secondItem="A7u-So-sHS" secondAttribute="bottom" constant="8" symbolic="YES" id="eqZ-HR-fCZ"/>
                     <constraint firstItem="KWh-Tq-lId" firstAttribute="leading" secondItem="3zs-fF-5TP" secondAttribute="leading" id="hkg-Rb-HD0"/>
                     <constraint firstItem="KWh-Tq-lId" firstAttribute="top" secondItem="xpd-PV-tSx" secondAttribute="bottom" constant="8" symbolic="YES" id="kae-Rb-MVy"/>
+                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="2.5" id="mCZ-wb-qDD"/>
+                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="top" secondItem="A7u-So-sHS" secondAttribute="bottom" constant="8" symbolic="YES" id="nIB-HC-gmF"/>
                     <constraint firstItem="xpd-PV-tSx" firstAttribute="top" secondItem="qJF-OW-Uct" secondAttribute="top" id="nme-DM-fVf"/>
                     <constraint firstItem="xpd-PV-tSx" firstAttribute="leading" secondItem="KWh-Tq-lId" secondAttribute="leading" id="orp-Kc-RMg"/>
-                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q7y-AC-PJB"/>
+                    <constraint firstAttribute="bottom" secondItem="iF8-i2-Ab8" secondAttribute="bottom" constant="76.5" id="pg4-tp-gB0"/>
                     <constraint firstItem="3zs-fF-5TP" firstAttribute="top" secondItem="KWh-Tq-lId" secondAttribute="bottom" constant="8" symbolic="YES" id="u8D-xR-ct5"/>
                 </constraints>
             </tableViewCellContentView>
