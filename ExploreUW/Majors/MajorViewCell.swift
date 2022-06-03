@@ -39,7 +39,6 @@ class MajorViewCell: UITableViewCell {
     func configureCell(major: Major) {
         // Initialize the major data
         let majorName = major.majorName
-//        let majorName = "Informatics"
         let majorTypeLong = major.majorType
         let college = major.college
         let department = major.department

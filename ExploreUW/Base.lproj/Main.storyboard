@@ -125,7 +125,7 @@
                         <color key="selectedImageTintColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.82352941176470584" green="0.70588235294117641" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -309,7 +309,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="EVENTS" image="calendar" catalog="system" badgeValue="3" selectedImage="calendar" id="ccJ-2a-ACN">
-                        <color key="badgeColor" cyan="0.0" magenta="0.13" yellow="0.76464179421768708" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="badgeColor" red="0.82745098039215681" green="0.68627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <connections>
                         <outlet property="eventTableView" destination="nCb-bk-4oa" id="nCA-60-WKX"/>
