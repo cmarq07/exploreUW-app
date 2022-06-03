@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        
         let font = UIFont(name:"Encode Sans Normal", size: 14.0)
         let boldFont = UIFont(name:"Encode Sans Normal Bold", size: 14.0)
         
@@ -53,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().standardAppearance = tabBarAppearance
         
         return true
+         
     }
     
     // MARK: UISceneSession Lifecycle

@@ -14,34 +14,37 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initList()
+        if let localData = self.readLocalFile(forName: "Events") {
+            let parseData = self.parse(jsonData: localData)
+            eventList = parseData!
+        }
     }
     
-    func initList() {
-        // This is hardcoded data before we implement the database
-        let event1 = Event(title: "Event 1", date: "Jan 1", description: "Desc 1")
-        eventList.append(event1)
+    // Function to read the Local Files
+    private func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+               let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
         
-        let event2 = Event(title: "Event 2", date: "Jan 2", description: "Desc 2")
-        eventList.append(event2)
-        
-        let event3 = Event(title: "Event 3", date: "Jan 3", description: "Desc 3")
-        eventList.append(event3)
-        
-        let event4 = Event(title: "Event 4", date: "Jan 4", description: "Desc 4")
-        eventList.append(event4)
-        
-        let event5 = Event(title: "Event 5", date: "Jan 5", description: "Desc 5")
-        eventList.append(event5)
-        
-        let event6 = Event(title: "Event 6", date: "Jan 6", description: "Desc 6")
-        eventList.append(event6)
-        
-        let event7 = Event(title: "Event 7", date: "Jan 7", description: "Desc 7")
-        eventList.append(event7)
-        
-        let event8 = Event(title: "Event 8", date: "Jan 8", description: "Desc 8")
-        eventList.append(event8)
+        return nil
+    }
+    
+    // Function to parse the json data read from the file
+    private func parse(jsonData: Data) -> [Event]? {
+        do {
+            let decodedData = try JSONDecoder().decode([Event].self, from: jsonData) // Should be an array of majors
+            return decodedData
+        } catch {
+            print("Decoding error -- returning nothing")
+            print(error)
+            return nil
+        }
     }
 
     
