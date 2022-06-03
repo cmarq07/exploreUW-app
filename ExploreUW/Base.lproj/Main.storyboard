@@ -23,7 +23,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--HOME-->
+        <!--Home-->
         <scene sceneID="gH3-Sm-GkB">
             <objects>
                 <viewController id="cP3-WQ-Vif" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                             <constraint firstItem="bRL-sI-t2j" firstAttribute="trailing" secondItem="2kc-b0-0Us" secondAttribute="trailing" id="tD9-un-hC5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="HOME" image="house.fill" catalog="system" selectedImage="house.fill" id="xqs-aM-Q4q">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="xqs-aM-Q4q">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -140,7 +140,7 @@
             </objects>
             <point key="canvasLocation" x="-1673" y="-215"/>
         </scene>
-        <!--MAJORS-->
+        <!--Majors-->
         <scene sceneID="ou5-Ie-65V">
             <objects>
                 <viewController storyboardIdentifier="majors" id="jEj-qv-2F0" customClass="MajorsViewController" customModule="ExploreUW" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,7 +217,7 @@
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="top" secondItem="hJ7-tR-0OD" secondAttribute="bottom" constant="19" id="rdh-Cc-bqY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="MAJORS" image="graduationcap" catalog="system" selectedImage="graduationcap.fill" id="SNd-ke-3bl"/>
+                    <tabBarItem key="tabBarItem" title="Majors" image="graduationcap" catalog="system" selectedImage="graduationcap.fill" id="SNd-ke-3bl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MajorsTable" destination="drq-VA-w1g" id="hfe-w3-S2M"/>
@@ -227,7 +227,7 @@
             </objects>
             <point key="canvasLocation" x="-778.26086956521749" y="-216.29464285714286"/>
         </scene>
-        <!--EVENTS-->
+        <!--Events-->
         <scene sceneID="6Hu-dS-YA3">
             <objects>
                 <viewController id="HKP-H3-Feb" customClass="EventViewController" customModule="ExploreUW" customModuleProvider="target" sceneMemberID="viewController">
@@ -308,7 +308,7 @@
                             <constraint firstItem="bRE-Uc-DX6" firstAttribute="leading" secondItem="bUk-ch-3My" secondAttribute="leading" constant="16" id="tl3-DU-z6C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="EVENTS" image="calendar" catalog="system" badgeValue="3" selectedImage="calendar" id="ccJ-2a-ACN">
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar" catalog="system" badgeValue="3" selectedImage="calendar" id="ccJ-2a-ACN">
                         <color key="badgeColor" red="0.82745098039215681" green="0.68627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBarItem>
                     <connections>
