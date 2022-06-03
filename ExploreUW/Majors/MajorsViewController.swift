@@ -9,13 +9,13 @@ import UIKit
 
 class MajorsViewController: UIViewController {
     
-    // Data
-    //var major = Major(majorName: "Informatics", majorType: "Capacity-Constrained", college: "Information School", department: nil, tracks: ["Biomedical and Health Informatics", "Data Science", "Human-Computer Interaction", "Information Architecture", "Information Assurance and Cybersecurity", "Custom Track"], prerequisites: nil, hasMinor: true, notes: nil)
     var majors: [Major] = []
     
     // Outlets
     @IBOutlet weak var MajorsTable: UITableView!
     
+    // MARK: Overriden Functions
+    // MARK: ViewWillAppear
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,12 +23,12 @@ class MajorsViewController: UIViewController {
             let parseData = self.parse(jsonData: localData)
             majors = parseData!
         }
-        //data.append(major)
         // Do any additional setup after loading the view.
         
         // Register the "MajorViewCell" nib file for the TableView
         MajorsTable.register(UINib(nibName: "MajorViewCell", bundle: nil), forCellReuseIdentifier: "majorCell")
         
+        // MajorsTable.rowHeight = 400
         // Set TableView data source and delegate
         MajorsTable.delegate = self
         MajorsTable.dataSource = self
@@ -72,14 +72,29 @@ extension MajorsViewController: UITableViewDelegate {
 
 extension MajorsViewController: UITableViewDataSource {
     
+    // Spacing between majors
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if(section == majors.count) {
+            return 0
+        } else {
+            return 20
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return UIView()
+    }
+    
     // How many rows should be in each section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return majors.count
+        return 1
     }
     
     // How many sections there should be (default 1)
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return majors.count
     }
     
     // Creating the cell data
@@ -89,7 +104,7 @@ extension MajorsViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "majorCell", for: indexPath) as?  MajorViewCell {
             
             // Get the current major matching with the data
-            let currentMajor = majors[indexPath.row]
+            let currentMajor = majors[indexPath.section]
             cell.configureCell(major: currentMajor)
             
             // Return the configured cell
