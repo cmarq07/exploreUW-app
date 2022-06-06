@@ -1,11 +1,18 @@
 [
-    {
+  {
         "major_name": "Art",
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Interdisciplinary Visual Art, Painting and Drawing, Photomedia, Three-Dimensional Forum: Ceramics. Glass. Sculpture",
-        "prerequisites": {"min_gpa":2.5, "min_art_credits":5, "applicant_level":"baccalaureate"},
+        "prerequisites": {
+            "min_gpa": 2.5,
+            "min_dept_credits": {
+                "department": "Art",
+                "number": 5
+            },
+            "applicant_level": "baccalaureate"
+        },
         "minor": false
     },
     {
@@ -13,8 +20,14 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        "prerequisites": {"min_gpa":2.5, "min_art_credits":5, "applicant_level":"baccalaureate"},
+        "prerequisites": {
+            "min_gpa": 2.5,
+            "min_dept_credits": {
+                "department": "Art",
+                "number": 5
+            },
+            "applicant_level": "baccalaureate"
+        },
         "minor": true
     },
     {
@@ -22,8 +35,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
         "minor": false
     },
     {
@@ -32,7 +43,14 @@
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Creative Studies, Dance Studies",
-        "prerequisites": {"min_gpa":2.0, "min_core_dance_credits":5, "min_core_technical_course":"1"},
+        "prerequisites": {
+            "min_gpa": 2.0,
+            "min_dept_credits": {
+                "department": "Dance",
+                "number": 5
+            },
+            "min_core_technical_course": "1"
+        },
         "minor": true
     },
     {
@@ -41,9 +59,16 @@
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Industrial Design, Interaction Design, Visual Communication Design",
-        "prerequisites": {"min_gpa":2.5, "min_art_credits": {"number": 5, "min_gpa": 2.5}, "applicant_level":"baccalaureate"},
-        "minor": false,
-        "notes": "Current UW freshman who have taken or will take DESIGN 166 and receive a 3.7 GPA in the course will be automatically granted admission to the major. Otherwise apply regularly"
+        "prerequisites": {
+            "min_gpa": 2.5,
+            "min_dept_credits": {
+                "number": 5,
+                "min_gpa": 2.5,
+                "department": "Arts"
+            },
+            "applicant_level": "baccalaureate"
+        },
+        "minor": false
     },
     {
         "major_name": "Drama",
@@ -51,7 +76,9 @@
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Performance, Design",
-        "prerequisites": {"course":["DRAMA 201"]},
+        "prerequisites": {
+            "course": ["DRAMA 201"]
+        },
         "minor": false,
         "notes": "No audition is required to enter the program"
     },
@@ -60,27 +87,24 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Guitar",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Jazz Studies",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Music",
@@ -88,35 +112,32 @@
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Music History, Voice, Early Music, Music Theory, Instrumental",
-        
-        "minor": true
+        "minor": true,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Music Education",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Orchestral Instruments",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Organ (Music)",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Percussion",
@@ -124,34 +145,30 @@
         "college": "Arts and Sciences",
         "department": "Arts",
         "tracks": "Orchestral Percussion, Mallet Keyboard",
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Piano",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Voice (Music)",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Arts",
-        
-        
-        "minor": false
+        "minor": false,
+        "notes": "(School of Music) Students must take an entrance audition or submit an application for admission.--\nStudents are recommended to have 4-8 years of experience with a private instrument to show passion in this area and 1-2 years of basic piano lessons."
     },
     {
         "major_name": "Asian Languages and Culture",
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": false
     },
     {
@@ -159,8 +176,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true,
         "notes": "Any student with good academic standing can declare this major at any time"
     },
@@ -169,8 +184,11 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        "prerequisites": {"min_gpa":2.0, "requirement":"English Composition", "course": ["CMS 270", "CMS 271", "CMS 272", "CMS 273", "CMS 274", "CMS 275"]},
+        "prerequisites": {
+            "min_gpa": 2.0,
+            "requirement": "English Composition",
+            "course": ["CMS 270", "CMS 271", "CMS 272", "CMS 273", "CMS 274", "CMS 275"]
+        },
         "minor": true
     },
     {
@@ -178,8 +196,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -187,8 +203,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": false
     },
     {
@@ -196,8 +210,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -205,8 +217,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -215,7 +225,13 @@
         "college": "Arts and Sciences",
         "department": "Humanities",
         "tracks": "Creative Writing",
-        "prerequisites": {"min_gpa":2.0, "min_english_gpa":2.0},
+        "prerequisites": {
+            "min_gpa": 2.0,
+            "min_dept_gpa": {
+                "dept": "English",
+                "gpa": 2.0
+            }
+        },
         "minor": true
     },
     {
@@ -223,8 +239,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -232,8 +246,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": false
     },
     {
@@ -241,8 +253,9 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
+        "prerequisites": {
+            "course": ["GERMAN 202 or equivalent"]
+        },
         "minor": true
     },
     {
@@ -250,8 +263,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -259,8 +270,6 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -268,8 +277,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -277,8 +284,6 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -286,8 +291,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Humanities",
-        
-        
         "minor": true
     },
     {
@@ -296,7 +299,14 @@
         "college": "Arts and Sciences",
         "department": "Humanities",
         "tracks": "Romance Linguistics",
-        
+        "prerequisites": {
+            "requirement": "Must complete the third quarter or equivalent of a foreign language",
+            "courses": [{
+                "course": ["LING 200", "LING 400"]
+            }, {
+                "requirements": ["1 Writing (W) course", "1 Quantitative and Symbolic Reasoning (QSR) course"]
+            }]
+        },
         "minor": true
     },
     {
@@ -305,7 +315,9 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "Biological and Life Sciences, Discrete Mathematics and Algorithms, Engineering and Physical Sciences, Mathematical Economics and Quantitative Finance, Scientific Computing and Numerical Algorithms, Social and Behavioral Sciences, Data Sciences and Statistics",
-        
+        "prerequisites": {
+            "courses": [{"courses": ["CSE 142", "CSE 143", "MATH 124/134", "MATH 125/135", "MATH 126/136"]}, {"course": ["MATH 307", "MATH 308", "AMATH 351", "AMATH 352"]}]
+        },
         "minor": false
     },
     {
@@ -313,8 +325,12 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
+        "prerequisites": {
+            "courses": {
+                "min_gpa": 2.0,
+                "courses": ["MATH 124/134", "MATH 125/135", "MATH 126/136"]
+            }
+        },
         "minor": true
     },
     {
@@ -322,8 +338,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": false
     },
     {
@@ -331,8 +345,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": false
     },
     {
@@ -341,8 +353,8 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "Ecology. Evolution. and Conservation, General (BA), General (BS), Molecular. Cellular. and Development, Physiology, Plant",
-        
-        "minor": false
+        "minor": false,
+        "notes": "Requirements vary per track, visit https://chem.washington.edu/undergraduate-admissions"
     },
     {
         "major_name": "Chemistry",
@@ -350,17 +362,25 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "BA, BS, ACS Certified BS",
-        
-        "minor": true
+        "minor": true,
+        "notes": "Requirements vary per track, visit https://chem.washington.edu/undergraduate-admissions"
     },
     {
         "major_name": "Computational Finance and Risk Management",
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
-        "minor": true
+        "prerequisites": {
+            "courses": [{
+                "min_gpa": 2.0,
+                "courses": ["MATH 124/134", "MATH 125/135", "MATH 126/136"]
+            }, {
+                "min_gpa": 2.0,
+                "course": "AMATH 301"
+            }]
+        },
+        "minor": true,
+        "notes": "Successful applicants typically have a 2.5 cumulative GPA or higher and no individual course with a grade of 2.0 or below"
     },
     {
         "major_name": "Computer Science",
@@ -368,8 +388,16 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "Data Science",
-        
-        "minor": false
+        "prerequisites": {
+            "courses": [{
+                "courses": ["MATH 124", "MATH 125", "MATH 126", "CSE 142", "CSE 143"]
+            }, {
+                "course": ["PHYS 121", "CHEM 142/145", "BIOL 180"]
+            }],
+            "requirement": "At least 5 English Composition credits"
+        },
+        "minor": false,
+        "notes": "Computer Science is a highly sought after degree at the UW. Admission is not guaranteed for meeting requirements.--\nYou are welcome to apply, but if you are not granted Direct Admission as a Freshman to Computer Science, it is highly recommended to either look for alternative degrees similar to CS (there are a bunch!) or reconsider schools."
     },
     {
         "major_name": "Mathematics",
@@ -377,7 +405,6 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "Comprehensive (BS), Philosophy (BA), Standard (BA), Teacher Preparation (BA)",
-        
         "minor": true
     },
     {
@@ -385,8 +412,6 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": true
     },
     {
@@ -394,8 +419,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": false
     },
     {
@@ -404,7 +427,6 @@
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
         "tracks": "Comprehensive Physics,\nApplied Physics,\nBiophysics,\nTeacher Preparation",
-        
         "minor": true
     },
     {
@@ -412,8 +434,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": false
     },
     {
@@ -421,8 +441,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": false
     },
     {
@@ -430,8 +448,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Natural Sciences",
-        
-        
         "minor": true
     },
     {
@@ -440,7 +456,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "African American Studies,\nAsian/Pacific American Studies,\nChicano Studies,\nComparative American Ethnic Studies",
-        
         "minor": false
     },
     {
@@ -448,8 +463,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -458,7 +471,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "Anthropology of Globalization,\nArchaeological Sciences,\nHuman Evolutionary Biology,\nMedical Anthropology and Global Health,\nIndigenous Archaeology",
-        
         "minor": true
     },
     {
@@ -466,8 +478,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
@@ -476,7 +486,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "Journalism and Public Interest Communication",
-        
         "minor": false
     },
     {
@@ -484,8 +493,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -493,8 +500,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
@@ -502,8 +507,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -511,8 +514,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -521,7 +522,14 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "Data Science,\nCities. Citizenship. and Migration,\nEnvironment. Economy. and Sustainability,\nGlobalization. Health. and Development\nGIS, Mapping, and Society",
-        "prerequisites": {"min_gpa":2.0, "min_geog_course": {"number": "1", "min_gpa": 2.0}},
+        "prerequisites": {
+            "min_gpa": 2.0,
+            "min_dept_course": {
+                "dept": "Geography",
+                "number": 1,
+                "min_gpa": 2.0
+            }
+        },
         "minor": true
     },
     {
@@ -529,8 +537,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
@@ -539,7 +545,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "History of Empire and Colonialism,\nHistory of Religion and Society,\nHistory of Race. Gender. and Power,\nHistory of War and Society",
-        
         "minor": true
     },
     {
@@ -547,8 +552,6 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
@@ -557,7 +560,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "Disability Studies",
-        
         "minor": false
     },
     {
@@ -565,8 +567,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
@@ -574,8 +574,6 @@
         "major_type": "Open Major",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -583,8 +581,6 @@
         "major_type": "Capacity-Constrained",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -592,8 +588,6 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": true
     },
     {
@@ -602,7 +596,6 @@
         "college": "Arts and Sciences",
         "department": "Social Sciences",
         "tracks": "Political Economy, International Security",
-        
         "minor": true
     },
     {
@@ -610,62 +603,48 @@
         "major_type": "Minimum Requirement",
         "college": "Arts and Sciences",
         "department": "Social Sciences",
-        
-        
         "minor": false
     },
     {
         "major_name": "Architectural Design",
         "major_type": "Capacity-Constrained",
         "college": "College of Built Environments",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Architecture",
         "major_type": "Capacity-Constrained",
         "college": "College of Built Environments",
-        
-        
-        
         "minor": true
     },
     {
         "major_name": "Community, Environment, and Planning",
         "major_type": "Capacity-Constrained",
         "college": "College of Built Environments",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Construction Management",
         "major_type": "Capacity-Constrained",
         "college": "College of Built Environments",
-        
-        
-        
         "minor": true
     },
     {
         "major_name": "Landscape Architecture",
         "major_type": "Capacity-Constrained",
         "college": "College of Built Environments",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Real Estate",
         "major_type": "Minimum Requirement",
         "college": "College of Built Environments",
-        
-        
-        "prerequisites": {"course":{"course_name": "RE 250", "min_gpa": 2.0}},
+        "prerequisites": {
+            "course": {
+                "course_name": "RE 250",
+                "min_gpa": 2.0
+            }
+        },
         "minor": true,
         "notes": "Anyone meeting the prerequisites with good academic standing can declare this major at any time"
     },
@@ -673,72 +652,50 @@
         "major_name": "Early Care and Education",
         "major_type": "Capacity-Constrained",
         "college": "College of Education",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Early Childhood and Family Studies",
         "major_type": "Capacity-Constrained",
         "college": "College of Education",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Education, Communities, and Organizations",
         "major_type": "Capacity-Constrained",
         "college": "College of Education",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Aeronautics and Astronautics",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": true
     },
     {
         "major_name": "Bioengineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
         "tracks": "Data Science,\nNanoscience and Molecular Engineering",
-        
         "minor": false
     },
     {
         "major_name": "Chemical Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
         "tracks": "Nanoscience and Molecular Engineering",
-        
         "minor": false
     },
     {
         "major_name": "Civil Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Computer Science and Engineering (CSE)",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": false,
         "notes": "Any student not granted direct admission to CSE should reconsider majors, or schools if Computer Science is your intended goal."
     },
@@ -746,63 +703,70 @@
         "major_name": "Electrical Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
         "tracks": "Nanoscience and Molecular Engineering",
-        
         "minor": false
     },
     {
         "major_name": "Environmental Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Human Centered Design and Engineering (HCDE)",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Industrial Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
-        
-        
         "minor": false
     },
     {
         "major_name": "Materials Science and Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
         "tracks": "Nanoscience and Molecular Engineering",
-        
         "minor": true
     },
     {
         "major_name": "Mechanical Engineering",
         "major_type": "Capacity-Constrained",
         "college": "College of Engineering",
-        
         "tracks": "Biomechanics,\nMechatronics,\nNanoscience and Molecular Engineering",
-        
         "minor": false
     },
     {
         "major_name": "Informatics",
         "major_type": "Capacity-Constrained",
         "college": "Information School",
-        
         "tracks": "Biomedical and Health Informatics, Data Science, Human-Computer Interaction, Information Architecture, Information Assurance and Cybersecurity, Custom Track",
-        "prerequisites": {"min_gpa":2.0},
+        "prerequisites": {
+            "min_gpa": 2.0
+        },
         "minor": true
+    },
+    {
+        "major_name": "Business Administration",
+        "major_type": "Capacity-Constrained",
+        "college": "Michael G. Foster School of Business",
+        "tracks": "Accounting,\nEntrepreneurship,\nFinance,\nHuman Resources Management,\nInformation Systems,\nMarketing,\nOperations and Supply Chain Management",
+        "prerequisites": {
+            "min_gpa": 2.0,
+            "min_dept_gpa": {
+                "dept": "Business",
+                "gpa": 2.0
+            }
+        },
+        "minor": true,
+        "notes": "Applicants can be either directly admitted as Freshmen, or apply during the admission cycles of Autumn and Winter.--\nApplicants are based on scholarship (grades), grades in pre-app courses, written communication skills, and evidence of leadership, community activities, and exceptional achievements or work experience.--\nBusiness is highly competitive, so make sure to showcase your strongest traits and an interest in business itself."
+    },
+    {
+        "major_name": "Medical Laboratory Science",
+        "major_type": "Capacity-Constrained",
+        "college": "School of Medicine",
+        "minor": false
     }
 ]

@@ -35,26 +35,26 @@
                                 <rect key="frame" x="0.0" y="95" width="414" height="703"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO EXPLOREUW!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osd-Lx-VfH">
-                                        <rect key="frame" x="8" y="8" width="398" height="30"/>
+                                        <rect key="frame" x="8" y="22" width="398" height="30"/>
                                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="24"/>
                                         <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ExploreUW is an app to help guide students in their experiences at the University of Washington!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlw-cx-aLx">
-                                        <rect key="frame" x="8" y="46" width="398" height="98.5"/>
+                                        <rect key="frame" x="8" y="60" width="398" height="98.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="24"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-hi-LAP">
-                                        <rect key="frame" x="8" y="168" width="398" height="163.5"/>
+                                        <rect key="frame" x="8" y="182" width="398" height="163.5"/>
                                         <string key="text">We offer the ability to find majors and RSOs of interest, and also view upcoming events at the University of Washington! Check some out now!</string>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="24"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ye-nf-pKT">
-                                        <rect key="frame" x="8" y="341" width="249" height="30"/>
+                                        <rect key="frame" x="8" y="355" width="249" height="30"/>
                                         <fontDescription key="fontDescription" name="EncodeSansNormal-Bold" family="Encode Sans Normal" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                                     <constraint firstItem="Xaq-kl-Scf" firstAttribute="trailing" secondItem="hRt-hi-LAP" secondAttribute="trailing" constant="8" id="ayr-FJ-Syc"/>
                                     <constraint firstItem="Xaq-kl-Scf" firstAttribute="trailing" secondItem="tlw-cx-aLx" secondAttribute="trailing" constant="8" id="efC-HY-V2U"/>
                                     <constraint firstItem="8Ye-nf-pKT" firstAttribute="top" secondItem="hRt-hi-LAP" secondAttribute="bottom" constant="9.5" id="hFj-PM-Swn"/>
-                                    <constraint firstItem="Osd-Lx-VfH" firstAttribute="top" secondItem="Xaq-kl-Scf" secondAttribute="top" constant="8" id="ho4-8Q-pNo"/>
+                                    <constraint firstItem="Osd-Lx-VfH" firstAttribute="top" secondItem="Xaq-kl-Scf" secondAttribute="top" constant="22" id="ho4-8Q-pNo"/>
                                     <constraint firstItem="tlw-cx-aLx" firstAttribute="top" secondItem="Osd-Lx-VfH" secondAttribute="bottom" constant="8" symbolic="YES" id="mA3-94-D4W"/>
                                     <constraint firstItem="hRt-hi-LAP" firstAttribute="top" secondItem="tlw-cx-aLx" secondAttribute="bottom" constant="23.5" id="poJ-DK-i4V"/>
                                     <constraint firstItem="hRt-hi-LAP" firstAttribute="leading" secondItem="Xaq-kl-Scf" secondAttribute="leading" constant="8" id="sRG-AW-j7c"/>
@@ -152,13 +152,12 @@
                                 <rect key="frame" x="0.0" y="95" width="414" height="703"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcm-xb-j2C">
-                                        <rect key="frame" x="8" y="60" width="398" height="115"/>
+                                        <rect key="frame" x="8" y="60" width="398" height="74"/>
                                         <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Looking for a major? Explore some different ones here! We also provide the prerequisites and other details, so you don't have to stress!</string>
+                                            <fragment content="Looking for a major? Explore some different ones here! We also provide admissions details so you don't have to stress!">
                                                 <attributes>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="24"/>
+                                                    <font key="NSFont" size="18" name="OpenSans"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -172,10 +171,142 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="drq-VA-w1g">
-                                        <rect key="frame" x="7" y="237" width="400" height="466"/>
+                                        <rect key="frame" x="7" y="196" width="400" height="507"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-ur-NcU">
+                                        <rect key="frame" x="8" y="133.5" width="398" height="54.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="CC">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> = Capacity Constrained
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="MR">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content"> = Minimum Requirement
+</string>
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="OM">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" = Open Major">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="*">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.1176470593" green="0.1176470593" blue="0.1176470593" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.40392157439999998" green="0.58823531870000001" blue="0.90196079019999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" = Minor Available">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" red="0.1176470593" green="0.1176470593" blue="0.1176470593" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Hwn-ZV-xI7"/>
                                 <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
@@ -185,10 +316,13 @@
                                     <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="DA5-oh-ElF" secondAttribute="trailing" constant="74.5" id="7qj-Hg-Brm"/>
                                     <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="Wcm-xb-j2C" secondAttribute="trailing" constant="8" id="Euc-PI-C0D"/>
                                     <constraint firstItem="DA5-oh-ElF" firstAttribute="top" secondItem="Hwn-ZV-xI7" secondAttribute="top" constant="22" id="IuF-m1-QWh"/>
+                                    <constraint firstItem="Hwn-ZV-xI7" firstAttribute="trailing" secondItem="iHG-ur-NcU" secondAttribute="trailing" constant="8" id="Kux-M3-lUO"/>
                                     <constraint firstItem="DA5-oh-ElF" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="M70-HO-tnC"/>
+                                    <constraint firstItem="drq-VA-w1g" firstAttribute="top" secondItem="iHG-ur-NcU" secondAttribute="bottom" constant="8" symbolic="YES" id="OmI-eb-8XJ"/>
                                     <constraint firstItem="drq-VA-w1g" firstAttribute="top" secondItem="Wcm-xb-j2C" secondAttribute="bottom" constant="62" id="THI-Xe-ecZ"/>
                                     <constraint firstItem="drq-VA-w1g" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="7" id="dhw-8I-Gsw"/>
                                     <constraint firstItem="Wcm-xb-j2C" firstAttribute="top" secondItem="DA5-oh-ElF" secondAttribute="bottom" constant="8" symbolic="YES" id="k3y-dM-1QN"/>
+                                    <constraint firstItem="iHG-ur-NcU" firstAttribute="leading" secondItem="Hwn-ZV-xI7" secondAttribute="leading" constant="8" id="nPB-rz-t2e"/>
                                     <constraint firstAttribute="bottom" secondItem="drq-VA-w1g" secondAttribute="bottom" id="xDJ-re-Ovm"/>
                                 </constraints>
                             </view>
