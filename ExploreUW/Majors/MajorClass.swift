@@ -36,65 +36,43 @@ class MajorElement: Codable {
     }
 }
 
-enum College: String, Codable {
-    case artsAndSciences = "Arts and Sciences"
-    case collegeOfBuiltEnvironments = "College of Built Environments"
-    case collegeOfEducation = "College of Education"
-    case collegeOfEngineering = "College of Engineering"
-    case informationSchool = "Information School"
-}
-
-enum Department: String, Codable {
-    case arts = "Arts"
-    case humanities = "Humanities"
-    case naturalSciences = "Natural Sciences"
-    case socialSciences = "Social Sciences"
-}
-
-enum MajorType: String, Codable {
-    case capacityConstrained = "Capacity-Constrained"
-    case minimumRequirement = "Minimum Requirement"
-    case openMajor = "Open Major"
-}
-
 // MARK: - Prerequisites
 class Prerequisites: Codable {
     let minGpa: Double?
-    let minArtCredits: MinArtCreditsUnion?
-    let applicantLevel: String?
-    let minCoreDanceCredits: Int?
-    let minCoreTechnicalCourse: String?
-    let course: CourseUnion?
+    let minDeptCredits: MinDeptCredits?
+    let applicantLevel, minCoreTechnicalCourse: String?
+    let course: PrerequisitesCourse?
     let requirement: String?
-    let minEnglishGpa: Int?
-    let minGeogCourse: MinGeogCourse?
+    let minDeptGpa: MinDeptGpa?
+    let courses: CoursesUnion?
+    let minDeptCourse: MinDeptCourse?
 
     enum CodingKeys: String, CodingKey {
         case minGpa = "min_gpa"
-        case minArtCredits = "min_art_credits"
+        case minDeptCredits = "min_dept_credits"
         case applicantLevel = "applicant_level"
-        case minCoreDanceCredits = "min_core_dance_credits"
         case minCoreTechnicalCourse = "min_core_technical_course"
         case course, requirement
-        case minEnglishGpa = "min_english_gpa"
-        case minGeogCourse = "min_geog_course"
+        case minDeptGpa = "min_dept_gpa"
+        case courses
+        case minDeptCourse = "min_dept_course"
     }
 
-    init(minGpa: Double?, minArtCredits: MinArtCreditsUnion?, applicantLevel: String?, minCoreDanceCredits: Int?, minCoreTechnicalCourse: String?, course: CourseUnion?, requirement: String?, minEnglishGpa: Int?, minGeogCourse: MinGeogCourse?) {
+    init(minGpa: Double?, minDeptCredits: MinDeptCredits?, applicantLevel: String?, minCoreTechnicalCourse: String?, course: PrerequisitesCourse?, requirement: String?, minDeptGpa: MinDeptGpa?, courses: CoursesUnion?, minDeptCourse: MinDeptCourse?) {
         self.minGpa = minGpa
-        self.minArtCredits = minArtCredits
+        self.minDeptCredits = minDeptCredits
         self.applicantLevel = applicantLevel
-        self.minCoreDanceCredits = minCoreDanceCredits
         self.minCoreTechnicalCourse = minCoreTechnicalCourse
         self.course = course
         self.requirement = requirement
-        self.minEnglishGpa = minEnglishGpa
-        self.minGeogCourse = minGeogCourse
+        self.minDeptGpa = minDeptGpa
+        self.courses = courses
+        self.minDeptCourse = minDeptCourse
     }
 }
 
-enum CourseUnion: Codable {
-    case courseClass(CourseClass)
+enum PrerequisitesCourse: Codable {
+    case purpleCourse(PurpleCourse)
     case stringArray([String])
 
     init(from decoder: Decoder) throws {
@@ -103,17 +81,17 @@ enum CourseUnion: Codable {
             self = .stringArray(x)
             return
         }
-        if let x = try? container.decode(CourseClass.self) {
-            self = .courseClass(x)
+        if let x = try? container.decode(PurpleCourse.self) {
+            self = .purpleCourse(x)
             return
         }
-        throw DecodingError.typeMismatch(CourseUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for CourseUnion"))
+        throw DecodingError.typeMismatch(PrerequisitesCourse.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for PrerequisitesCourse"))
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch self {
-        case .courseClass(let x):
+        case .purpleCourse(let x):
             try container.encode(x)
         case .stringArray(let x):
             try container.encode(x)
@@ -121,159 +99,189 @@ enum CourseUnion: Codable {
     }
 }
 
-// MARK: - CourseClass
-class CourseClass: Codable {
+// MARK: - PurpleCourse
+class PurpleCourse: Codable {
     let courseName: String
-    let minGpa: Int
+    let minGpa: Double
 
     enum CodingKeys: String, CodingKey {
         case courseName = "course_name"
         case minGpa = "min_gpa"
     }
 
-    init(courseName: String, minGpa: Int) {
+    init(courseName: String, minGpa: Double) {
         self.courseName = courseName
         self.minGpa = minGpa
     }
 }
 
-enum MinArtCreditsUnion: Codable {
-    case integer(Int)
-    case minArtCreditsClass(MinArtCreditsClass)
+enum CoursesUnion: Codable {
+    case coursesClass(CoursesClass)
+    case unionArray([CourseElement])
 
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
-        if let x = try? container.decode(Int.self) {
-            self = .integer(x)
+        if let x = try? container.decode([CourseElement].self) {
+            self = .unionArray(x)
             return
         }
-        if let x = try? container.decode(MinArtCreditsClass.self) {
-            self = .minArtCreditsClass(x)
+        if let x = try? container.decode(CoursesClass.self) {
+            self = .coursesClass(x)
             return
         }
-        throw DecodingError.typeMismatch(MinArtCreditsUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for MinArtCreditsUnion"))
+        throw DecodingError.typeMismatch(CoursesUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for CoursesUnion"))
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
         switch self {
-        case .integer(let x):
+        case .coursesClass(let x):
             try container.encode(x)
-        case .minArtCreditsClass(let x):
+        case .unionArray(let x):
             try container.encode(x)
         }
     }
 }
 
-// MARK: - MinArtCreditsClass
-class MinArtCreditsClass: Codable {
+enum CourseElement: Codable {
+    case fluffyCourse(FluffyCourse)
+    case string(String)
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let x = try? container.decode(String.self) {
+            self = .string(x)
+            return
+        }
+        if let x = try? container.decode(FluffyCourse.self) {
+            self = .fluffyCourse(x)
+            return
+        }
+        throw DecodingError.typeMismatch(CourseElement.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for CourseElement"))
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .fluffyCourse(let x):
+            try container.encode(x)
+        case .string(let x):
+            try container.encode(x)
+        }
+    }
+}
+
+// MARK: - FluffyCourse
+class FluffyCourse: Codable {
+    let course: CourseCourseUnion?
+    let requirements: [String]?
+    let minGpa: Double?
+    let courses: [String]?
+
+    enum CodingKeys: String, CodingKey {
+        case course, requirements
+        case minGpa = "min_gpa"
+        case courses
+    }
+
+    init(course: CourseCourseUnion?, requirements: [String]?, minGpa: Double?, courses: [String]?) {
+        self.course = course
+        self.requirements = requirements
+        self.minGpa = minGpa
+        self.courses = courses
+    }
+}
+
+enum CourseCourseUnion: Codable {
+    case string(String)
+    case stringArray([String])
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if let x = try? container.decode([String].self) {
+            self = .stringArray(x)
+            return
+        }
+        if let x = try? container.decode(String.self) {
+            self = .string(x)
+            return
+        }
+        throw DecodingError.typeMismatch(CourseCourseUnion.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for CourseCourseUnion"))
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .string(let x):
+            try container.encode(x)
+        case .stringArray(let x):
+            try container.encode(x)
+        }
+    }
+}
+
+// MARK: - CoursesClass
+class CoursesClass: Codable {
+    let minGpa: Double
+    let courses: [String]
+
+    enum CodingKeys: String, CodingKey {
+        case minGpa = "min_gpa"
+        case courses
+    }
+
+    init(minGpa: Double, courses: [String]) {
+        self.minGpa = minGpa
+        self.courses = courses
+    }
+}
+
+// MARK: - MinDeptCourse
+class MinDeptCourse: Codable {
+    let dept: String
     let number: Int
     let minGpa: Double
 
     enum CodingKeys: String, CodingKey {
-        case number
+        case dept, number
         case minGpa = "min_gpa"
     }
 
-    init(number: Int, minGpa: Double) {
+    init(dept: String, number: Int, minGpa: Double) {
+        self.dept = dept
         self.number = number
         self.minGpa = minGpa
     }
 }
 
-// MARK: - MinGeogCourse
-class MinGeogCourse: Codable {
-    let number: String
-    let minGpa: Int
+// MARK: - MinDeptCredits
+class MinDeptCredits: Codable {
+    let department: String
+    let number: Int
+    let minGpa: Double?
 
     enum CodingKeys: String, CodingKey {
-        case number
+        case department, number
         case minGpa = "min_gpa"
     }
 
-    init(number: String, minGpa: Int) {
+    init(department: String, number: Int, minGpa: Double?) {
+        self.department = department
         self.number = number
         self.minGpa = minGpa
     }
 }
 
+// MARK: - MinDeptGpa
+class MinDeptGpa: Codable {
+    let dept: String
+    let gpa: Double
+
+    init(dept: String, gpa: Double) {
+        self.dept = dept
+        self.gpa = gpa
+    }
+}
+
+// TypeAlias for easy calling
 typealias Major = MajorElement
-
-// Major Class
-/* class Major: Codable {
-    
-    // Properties
-    var majorName: String
-    var majorType: String
-    var college: String
-    var department: String?
-    var tracks: [String]?
-    var prerequisites: AnyObject?
-    var hasMinor: Bool
-    var notes: String?
-    
-    private enum CodingKeys: String, CodingKey {
-        case majorName
-        case majorType
-        case college
-        case department
-        case tracks
-        case prerequisites
-        case hasMinor
-        case notes
-    }
-    
-    init() {
-        self.majorName = ""
-        self.majorType = ""
-        self.college = ""
-        self.department = ""
-        self.hasMinor = false
-    }
-    
-    init(majorName: String, majorType: String, college: String, department: String?, tracks: [String]?, prerequisites: AnyObject?, hasMinor: Bool, notes: String?) {
-        self.majorName = majorName
-        self.majorType = majorType
-        self.college = college
-        self.department = department
-        self.tracks = tracks
-        self.prerequisites = prerequisites
-        self.hasMinor = hasMinor
-        self.notes = notes
-    }
-    
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(majorName, forKey: .majorName)
-        try container.encode(majorName, forKey: .majorType)
-        try container.encode(majorName, forKey: .college)
-        try container.encode(majorName, forKey: .department)
-        try container.encode(majorName, forKey: .tracks)
-        try container.encode(majorName, forKey: .prerequisites)
-        try container.encode(majorName, forKey: .hasMinor)
-        try container.encode(majorName, forKey: .notes)
-        
-    }
-    
-    required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        majorName = try values.decode(String.self, forKey: .majorName)
-        majorType = try values.decode(String.self, forKey: .majorType)
-        college = try values.decode(String.self, forKey: .college)
-        department = try values.decode(String.self, forKey: .department)
-        tracks = try values.decode([String].self, forKey: .tracks)
-        hasMinor = try values.decode(Bool.self, forKey: .hasMinor)
-        notes = try values.decode(String.self, forKey: .notes)
-    }
-}
-
-class Majors: Codable {
-    
-    // Properties
-    var majors: [Major]
-    
-    init() {
-        self.majors = []
-    }
-}
-*/

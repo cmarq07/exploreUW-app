@@ -163,7 +163,7 @@
                 <outlet property="prereqsLabel" destination="RK7-fg-uci" id="fIP-Oc-xI8"/>
                 <outlet property="tracksLabel" destination="A7u-So-sHS" id="70M-iF-QXo"/>
             </connections>
-            <point key="canvasLocation" x="-155" y="139"/>
+            <point key="canvasLocation" x="-155.07246376811597" y="138.61607142857142"/>
         </tableViewCell>
     </objects>
 </document>
