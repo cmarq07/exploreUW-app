@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A21A9F3284FE02E00387DDE /* ExploreUW.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A21A9F2284FE02E00387DDE /* ExploreUW.png */; };
 		0A2EA0BC284572FB00664FA1 /* Majors.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EA0BB284572FB00664FA1 /* Majors.json */; };
 		0A2EA0BF2845792C00664FA1 /* MajorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EA0BE2845792C00664FA1 /* MajorsViewController.swift */; };
 		0AA90AC4284809F900DE4CCC /* MajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA90AC2284809F900DE4CCC /* MajorViewCell.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A21A9F2284FE02E00387DDE /* ExploreUW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExploreUW.png; path = ExploreUW/Images/ExploreUW.png; sourceTree = SOURCE_ROOT; };
 		0A21D76A283DC920009A8B16 /* EncodeSansNormal-700-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-700-Bold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-700-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		0A21D76B283DC920009A8B16 /* EncodeSansNormal-200-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-200-ExtraLight.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-200-ExtraLight.ttf"; sourceTree = SOURCE_ROOT; };
 		0A21D76C283DC920009A8B16 /* EncodeSansNormal-600-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-600-SemiBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-600-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
@@ -152,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A21A9EE284FDB4E00387DDE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A21A9F2284FE02E00387DDE /* ExploreUW.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		0A21D769283DC8CD009A8B16 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		0AD24BC62836FCC20048C828 /* ExploreUW */ = {
 			isa = PBXGroup;
 			children = (
+				0A21A9EE284FDB4E00387DDE /* Images */,
 				0A2EA0B8284572B800664FA1 /* Data */,
 				0A21D769283DC8CD009A8B16 /* Fonts */,
 				0A2EA0BD284578E900664FA1 /* Majors */,
@@ -378,6 +389,7 @@
 				0AF0FB31284FD47700936E33 /* Open Sans 300.ttf in Resources */,
 				0AF0FB32284FD47700936E33 /* Open Sans 300italic.ttf in Resources */,
 				0AF0FB33284FD47700936E33 /* Open Sans 600.ttf in Resources */,
+				0A21A9F3284FE02E00387DDE /* ExploreUW.png in Resources */,
 				0AF0FB34284FD47700936E33 /* Open Sans 600italic.ttf in Resources */,
 				0AF0FB35284FD47700936E33 /* Open Sans 700.ttf in Resources */,
 				0AF0FB36284FD47700936E33 /* Open Sans 700italic.ttf in Resources */,
