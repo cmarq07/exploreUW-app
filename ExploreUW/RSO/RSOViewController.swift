@@ -35,7 +35,7 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var searchActive : Bool = false
     
     let mainPath = Bundle.main.url(forResource: "RSOs", withExtension: "json")
-    let documentCopy = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("RSOcopy.json")
+    let documentCopy = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("RSOcopy1.json")
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var rsoTable: UITableView!
