@@ -155,12 +155,12 @@
                                 <rect key="frame" x="0.0" y="95" width="414" height="703"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcm-xb-j2C">
-                                        <rect key="frame" x="8" y="60" width="398" height="64.5"/>
+                                        <rect key="frame" x="8" y="60" width="398" height="74"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Looking for a major? Explore some different ones here! We also provide admissions details so you don't have to stress!">
                                                 <attributes>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                    <font key="NSFont" size="18" name="OpenSans"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -174,20 +174,33 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="drq-VA-w1g">
-                                        <rect key="frame" x="7" y="186.5" width="400" height="516.5"/>
+                                        <rect key="frame" x="7" y="196" width="400" height="507"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-ur-NcU">
-                                        <rect key="frame" x="8" y="130.5" width="398" height="48"/>
+                                        <rect key="frame" x="8" y="133.5" width="398" height="54.5"/>
                                         <attributedString key="attributedText">
+                                            <fragment content="CC">
+                                                <attributes>
+                                                    <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
+                                                    <real key="NSKern" value="0.0"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <color key="NSStrokeColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                </attributes>
+                                            </fragment>
                                             <fragment>
-                                                <string key="content">CC = Capacity Constrained
+                                                <string key="content"> = Capacity Constrained
 </string>
                                                 <attributes>
                                                     <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -200,9 +213,9 @@
                                                 <attributes>
                                                     <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="cellTitle"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -216,7 +229,7 @@
                                                 <attributes>
                                                     <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -229,9 +242,9 @@
                                                 <attributes>
                                                     <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="cellTitle"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -243,7 +256,7 @@
                                                 <attributes>
                                                     <color key="NSBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -258,7 +271,7 @@ Cg
 </string>
                                                 <attributes>
                                                     <color key="NSColor" red="0.83137255909999996" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -271,9 +284,9 @@ Cg
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.1176470593" green="0.1176470593" blue="0.1176470593" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="EncodeSansNormal-Black"/>
                                                     <real key="NSKern" value="0.0"/>
-                                                    <font key="NSOriginalFont" metaFont="cellTitle"/>
+                                                    <font key="NSOriginalFont" size="12" name="EncodeSansNormal-Black"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
                                                     </paragraphStyle>
@@ -285,7 +298,7 @@ Cg
                                                 <attributes>
                                                     <color key="NSBackgroundColor" red="0.1176470593" green="0.1176470593" blue="0.1176470593" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" metaFont="system" size="10"/>
+                                                    <font key="NSFont" size="10" name="OpenSans"/>
                                                     <real key="NSKern" value="0.0"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                         <tabStops/>
@@ -386,7 +399,7 @@ Cg
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xya-AE-vip">
-                                                    <rect key="frame" x="42" y="67" width="352" height="21"/>
+                                                    <rect key="frame" x="42" y="72" width="352" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="UniSansRegular" family="Uni Sans" pointSize="18"/>
                                                     <nil key="textColor"/>
@@ -394,7 +407,7 @@ Cg
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.84313725490000002" green="0.75686274509999996" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="eventDate" destination="Xya-AE-vip" id="Lsz-DH-Z5y"/>
                                             <outlet property="eventTitle" destination="h2d-oN-x5e" id="Hxm-u0-2w7"/>
