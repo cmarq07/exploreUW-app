@@ -33,7 +33,9 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
     var rsoList = [RSO]()
     var filteredRSO = [RSO]()
     var searchActive : Bool = false
+    
     let mainPath = Bundle.main.url(forResource: "RSOs", withExtension: "json")
+    let documentCopy = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("RSOcopy.json")
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var rsoTable: UITableView!
@@ -41,40 +43,36 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let localData = self.readLocalFile(forName: "RSOs") {
-            let parseData = self.parse(jsonData: localData)
-            rsoList = parseData!
-        }
+        loadFile(mainPath: mainPath!, subPath: documentCopy)
         rsoTable.dataSource = self
         rsoTable.delegate = self
         searchBar.delegate = self
         filteredRSO = rsoList
     }
     
-    private func readLocalFile(forName name: String) -> Data? {
-        do {
-            if let bundlePath = Bundle.main.url(forResource: name,
-                                                 withExtension: "json"),
-               let jsonData = try String(contentsOfFile: bundlePath.path).data(using: .utf8) {
-                return jsonData
+    // MARK: Read and load files
+    func loadFile(mainPath: URL, subPath: URL) {
+        if FileManager.default.fileExists(atPath: subPath.path) {
+            decodeData(pathName: subPath)
+            if rsoList.isEmpty {
+                decodeData(pathName: mainPath)
             }
-        } catch {
-            print(error)
+        } else {
+            decodeData(pathName: mainPath)
         }
-        return nil
     }
     
-    private func parse(jsonData: Data) -> [RSO]? {
+    func decodeData(pathName: URL) {
         do {
-            let decodedData = try JSONDecoder().decode([RSO].self, from: jsonData) // Should be an array of RSOs
-            return decodedData
+            let jsonData = try Data(contentsOf: pathName)
+            let decoder = JSONDecoder()
+            rsoList = try decoder.decode([RSO].self, from: jsonData)
         } catch {
-            print("Decoding error -- returning nothing")
             print(error)
-            return nil
         }
     }
     
+    // MARK: Table functions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredRSO.count
     }
@@ -106,6 +104,8 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
             return UIColor.black
         }
     }
+    
+    // MARK: Search bar functions
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText != "" {
@@ -163,6 +163,7 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
         }
         vc.didRegisterRSO = { [weak self] (item) in
             if self != nil {
+                print(self!.rsoList.count)
                 self!.rsoList.append(item)
                 self!.writeJSON(items: self!.rsoList)
                 self!.filteredRSO = self!.rsoList
@@ -175,17 +176,9 @@ class RSOViewController: UIViewController, UITableViewDataSource, UITableViewDel
     private func writeJSON(items: [RSO]) {
         do {
             let encoder = JSONEncoder()
-            let encodeData = try encoder.encode(rsoList)
             encoder.outputFormatting = .prettyPrinted
-            try encodeData.write(to: mainPath!)
-            if let localData = self.readLocalFile(forName: "RSOs") {
-                let parseData = self.parse(jsonData: localData)
-                print(parseData!.count)
-            }
-//            let fileURL = try FileManager.default.url(for: .desktopDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("RSOs.json")
-//            print(fileURL)
-//            let encoder = JSONEncoder()
-//            try encoder.encode(items).write(to: fileURL)
+            let encodeData = try encoder.encode(rsoList)
+            try encodeData.write(to: documentCopy)
         } catch {
             print(error.localizedDescription)
         }
