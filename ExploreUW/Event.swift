@@ -7,10 +7,14 @@
 
 import Foundation
 
-class Event {
+class Event: Codable {
     var title: String!
     var date: String!
     var description: String!
+    
+    enum CodingKeys: String, CodingKey {
+        case title, date, description
+    }
     
     public init(title:String, date:String, description:String) {
         self.title = title

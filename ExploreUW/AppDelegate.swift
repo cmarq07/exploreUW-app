@@ -53,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().standardAppearance = tabBarAppearance
 
         return true
+         
     }
     
     // MARK: UISceneSession Lifecycle

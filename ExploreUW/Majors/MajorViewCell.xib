@@ -32,7 +32,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
-                        <rect key="frame" x="0.0" y="50" width="79" height="29"/>
+                        <rect key="frame" x="0.0" y="53" width="79" height="29"/>
+
                         <attributedString key="attributedText">
                             <fragment content="College">
                                 <attributes>
@@ -45,7 +46,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
-                        <rect key="frame" x="0.0" y="87" width="96" height="21.5"/>
+                        <rect key="frame" x="0.0" y="90" width="96" height="21.5"/>
                         <attributedString key="attributedText">
                             <fragment content="Department">
                                 <attributes>
@@ -57,31 +58,40 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
-                        <rect key="frame" x="0.0" y="115.5" width="52.5" height="21"/>
+                        <rect key="frame" x="0.0" y="118.5" width="56.5" height="22.5"/>
+
                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
-                        <rect key="frame" x="0.0" y="216.5" width="104.5" height="21"/>
+
+                        <rect key="frame" x="0.0" y="221" width="117.5" height="22.5"/>
+
                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum overall GPA: 2.5 Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK7-fg-uci">
-                        <rect key="frame" x="0.0" y="245.5" width="320" height="149.5"/>
+
+                        <rect key="frame" x="0.0" y="251.5" width="320" height="174.5"/>
+
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Note" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-Zi-W5g">
-                        <rect key="frame" x="0.0" y="434" width="320" height="130"/>
+
+                        <rect key="frame" x="0.0" y="466.5" width="320" height="97.5"/>
+
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-vl-vSn">
-                        <rect key="frame" x="0.0" y="405" width="48" height="21"/>
+
+                        <rect key="frame" x="0.0" y="436" width="53" height="22.5"/>
+
                         <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -111,7 +121,9 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
-                        <rect key="frame" x="0.0" y="144" width="320" height="64.5"/>
+
+                        <rect key="frame" x="0.0" y="148.5" width="320" height="64.5"/>
+
                         <attributedString key="attributedText">
                             <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
                                 <attributes>
@@ -163,7 +175,7 @@
                 <outlet property="prereqsLabel" destination="RK7-fg-uci" id="fIP-Oc-xI8"/>
                 <outlet property="tracksLabel" destination="A7u-So-sHS" id="70M-iF-QXo"/>
             </connections>
-            <point key="canvasLocation" x="-155" y="139"/>
+            <point key="canvasLocation" x="-155.07246376811597" y="138.61607142857142"/>
         </tableViewCell>
     </objects>
 </document>
