@@ -26,7 +26,6 @@
 		0AF0FB2D284FD47700936E33 /* Fontfabric - UniSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D799283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */; };
 		0AF0FB2E284FD47700936E33 /* Fontfabric - UniSansLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D794283DC95B009A8B16 /* Fontfabric - UniSansLightItalic.otf */; };
 		0AF0FB2F284FD47700936E33 /* Fontfabric - UniSansRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D797283DC95B009A8B16 /* Fontfabric - UniSansRegular.otf */; };
-		0AF0FB30284FD47700936E33 /* Fontfabric - UniSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D798283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */; };
 		0AF0FB31284FD47700936E33 /* Open Sans 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77D283DC942009A8B16 /* Open Sans 300.ttf */; };
 		0AF0FB32284FD47700936E33 /* Open Sans 300italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77C283DC942009A8B16 /* Open Sans 300italic.ttf */; };
 		0AF0FB33284FD47700936E33 /* Open Sans 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D787283DC943009A8B16 /* Open Sans 600.ttf */; };
@@ -385,7 +384,6 @@
 				0AF0FB2D284FD47700936E33 /* Fontfabric - UniSansLight.otf in Resources */,
 				0AF0FB2E284FD47700936E33 /* Fontfabric - UniSansLightItalic.otf in Resources */,
 				0AF0FB2F284FD47700936E33 /* Fontfabric - UniSansRegular.otf in Resources */,
-				0AF0FB30284FD47700936E33 /* Fontfabric - UniSansLight.otf in Resources */,
 				0AF0FB31284FD47700936E33 /* Open Sans 300.ttf in Resources */,
 				0AF0FB32284FD47700936E33 /* Open Sans 300italic.ttf in Resources */,
 				0AF0FB33284FD47700936E33 /* Open Sans 600.ttf in Resources */,
