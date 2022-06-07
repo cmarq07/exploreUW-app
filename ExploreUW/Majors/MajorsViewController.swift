@@ -23,12 +23,13 @@ class MajorsViewController: UIViewController {
             let parseData = self.parse(jsonData: localData)
             majors = parseData!
         }
-        // Do any additional setup after loading the view.
+        
+        // Change the MajorsTable corner radius
+        MajorsTable.layer.cornerRadius = 10
         
         // Register the "MajorViewCell" nib file for the TableView
         MajorsTable.register(UINib(nibName: "MajorViewCell", bundle: nil), forCellReuseIdentifier: "majorCell")
         
-        // MajorsTable.rowHeight = 400
         // Set TableView data source and delegate
         MajorsTable.delegate = self
         MajorsTable.dataSource = self

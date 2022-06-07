@@ -23,9 +23,6 @@ class MajorViewCell: UITableViewCell {
     // MARK: Overriden Functions
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        contentView.layer.cornerRadius = 10
-        contentView.layer.masksToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -46,7 +43,6 @@ class MajorViewCell: UITableViewCell {
         let prerequisites = major.prerequisites
         let hasMinor = major.minor
         let shortcode = setMajorTypeShortcode(majorType: majorTypeLong)
-        let notes = major.notes
         
         majorNameLabel.text = majorName
         if(hasMinor) {
@@ -57,7 +53,13 @@ class MajorViewCell: UITableViewCell {
         deptLabel.text = department
         tracksLabel.text = tracks
         prereqsLabel.attributedText = setPrerequisitesString(prereqs: prerequisites)
-        notesLabel.text = notes?.replacingOccurrences(of: "--", with: "\n")
+        guard let notes = major.notes else {
+            notesTitle.text = ""
+            notesLabel.text = ""
+            return
+        }
+        notesTitle.text = "Notes"
+        notesLabel.text = notes.replacingOccurrences(of: "--", with: "\n")
     }
     
     private func setMajorTypeShortcode(majorType: String) -> String {

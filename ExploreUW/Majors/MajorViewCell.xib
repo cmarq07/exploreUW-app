@@ -24,132 +24,118 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="majorCell" rowHeight="584" id="KGk-i7-Jjw" customClass="MajorViewCell" customModule="ExploreUW" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="majorCell" id="KGk-i7-Jjw" customClass="MajorViewCell" customModule="ExploreUW" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
-                        <rect key="frame" x="0.0" y="53" width="73.5" height="24"/>
-                        <attributedString key="attributedText">
-                            <fragment content="College">
-                                <attributes>
-                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <font key="NSFont" size="24" name="UniSansRegular"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
-                        <rect key="frame" x="0.0" y="85" width="86.5" height="18"/>
-                        <attributedString key="attributedText">
-                            <fragment content="Department">
-                                <attributes>
-                                    <font key="NSFont" size="18" name="UniSansBook"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
-                        <rect key="frame" x="0.0" y="110" width="56.5" height="22.5"/>
-                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
-                        <rect key="frame" x="0.0" y="222" width="117.5" height="22.5"/>
-                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum overall GPA: 2.5 Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK7-fg-uci">
-                        <rect key="frame" x="0.0" y="252.5" width="320" height="174.5"/>
-                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Note" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-Zi-W5g">
-                        <rect key="frame" x="0.0" y="467.5" width="320" height="96.5"/>
-                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-vl-vSn">
-                        <rect key="frame" x="0.0" y="437" width="53" height="22.5"/>
-                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
-                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-bA-HFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="255.5" height="45"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="egp-3l-yey">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-df-Ydv">
-                                <rect key="frame" x="0.0" y="0.0" width="213" height="45"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-bA-HFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="255.5" height="45"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MajorName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="PVo-6K-eIr">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-df-Ydv">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="45"/>
-                                        <fontDescription key="fontDescription" name="EncodeSansNormal-Bold" family="Encode Sans Normal" pointSize="36"/>
-                                        <color key="textColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MajorName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="PVo-6K-eIr">
+                                                <rect key="frame" x="0.0" y="0.0" width="213" height="45"/>
+                                                <fontDescription key="fontDescription" name="EncodeSansNormal-Bold" family="Encode Sans Normal" pointSize="36"/>
+                                                <color key="textColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
+                                        <rect key="frame" x="221" y="0.0" width="34.5" height="45"/>
+                                        <fontDescription key="fontDescription" name="EncodeSansNormal-Black" family="Encode Sans Normal" pointSize="28"/>
+                                        <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="0.0" height="4"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
-                                <rect key="frame" x="221" y="0.0" width="34.5" height="45"/>
-                                <fontDescription key="fontDescription" name="EncodeSansNormal-Black" family="Encode Sans Normal" pointSize="28"/>
-                                <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
+                                <rect key="frame" x="0.0" y="53" width="73.5" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="College">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="UniSansRegular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
+                                <rect key="frame" x="0.0" y="85" width="86.5" height="18"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Department">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="UniSansBook"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
+                                <rect key="frame" x="0.0" y="111" width="56.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
+                                <rect key="frame" x="0.0" y="141.5" width="249" height="74"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="18" name="OpenSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
+                                <rect key="frame" x="0.0" y="223.5" width="117.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum overall GPA: 2.5 Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK7-fg-uci">
+                                <rect key="frame" x="0.0" y="254" width="191.5" height="174.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-vl-vSn">
+                                <rect key="frame" x="0.0" y="436.5" width="53" height="22.5"/>
+                                <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Note" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-Zi-W5g">
+                                <rect key="frame" x="0.0" y="467" width="36.5" height="117"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
-                        <rect key="frame" x="0.0" y="140" width="320" height="74"/>
-                        <attributedString key="attributedText">
-                            <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
-                                <attributes>
-                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <font key="NSFont" size="18" name="OpenSans"/>
-                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                </attributes>
-                            </fragment>
-                        </attributedString>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="aeC-vl-vSn" firstAttribute="top" secondItem="RK7-fg-uci" secondAttribute="bottom" constant="10" id="29I-hK-Pkv"/>
-                    <constraint firstItem="RK7-fg-uci" firstAttribute="top" secondItem="iF8-i2-Ab8" secondAttribute="bottom" constant="8" symbolic="YES" id="9G9-9n-1Po"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Vn-bA-HFZ" secondAttribute="trailing" id="BqN-bB-JdN"/>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="top" secondItem="nmU-ZI-h8G" secondAttribute="bottom" constant="7.5" id="Cpc-b6-3gA"/>
-                    <constraint firstItem="A7u-So-sHS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DAK-TF-SBh"/>
-                    <constraint firstItem="RK7-fg-uci" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EvJ-cH-Afn"/>
-                    <constraint firstItem="9Vn-bA-HFZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HXb-Ng-LK5"/>
-                    <constraint firstAttribute="trailing" secondItem="RK7-fg-uci" secondAttribute="trailing" id="KSv-xI-Zmj"/>
-                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LZ0-7d-tDM"/>
-                    <constraint firstAttribute="trailing" secondItem="A7u-So-sHS" secondAttribute="trailing" id="Lz5-xa-DhC"/>
-                    <constraint firstItem="3zs-fF-5TP" firstAttribute="top" secondItem="KWh-Tq-lId" secondAttribute="bottom" constant="8" symbolic="YES" id="RiG-0l-WSi"/>
-                    <constraint firstItem="nmU-ZI-h8G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YJI-6o-ahd"/>
-                    <constraint firstItem="YFi-Zi-W5g" firstAttribute="top" secondItem="aeC-vl-vSn" secondAttribute="bottom" constant="8" symbolic="YES" id="cCV-gk-Cqg"/>
-                    <constraint firstItem="KWh-Tq-lId" firstAttribute="top" secondItem="9Vn-bA-HFZ" secondAttribute="bottom" constant="8" symbolic="YES" id="cYs-Oy-D0C"/>
-                    <constraint firstItem="KWh-Tq-lId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hWt-7p-WKl"/>
-                    <constraint firstItem="3zs-fF-5TP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kpT-dp-8kf"/>
-                    <constraint firstAttribute="trailing" secondItem="YFi-Zi-W5g" secondAttribute="trailing" id="sPV-WE-qC8"/>
-                    <constraint firstItem="nmU-ZI-h8G" firstAttribute="top" secondItem="3zs-fF-5TP" secondAttribute="bottom" constant="7" id="uGq-P9-av0"/>
-                    <constraint firstItem="aeC-vl-vSn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uyJ-f2-Qym"/>
-                    <constraint firstItem="YFi-Zi-W5g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wCL-7c-Nqd"/>
-                    <constraint firstAttribute="bottom" secondItem="YFi-Zi-W5g" secondAttribute="bottom" constant="20" symbolic="YES" id="xoA-af-mur"/>
-                    <constraint firstItem="9Vn-bA-HFZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zmZ-Bt-or0"/>
-                    <constraint firstItem="YFi-Zi-W5g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zrf-8P-NBp"/>
-                    <constraint firstItem="iF8-i2-Ab8" firstAttribute="top" secondItem="A7u-So-sHS" secondAttribute="bottom" constant="8" symbolic="YES" id="zsY-eS-d9I"/>
+                    <constraint firstItem="egp-3l-yey" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="83s-dS-FUP"/>
+                    <constraint firstAttribute="trailing" secondItem="egp-3l-yey" secondAttribute="trailing" id="SWe-ft-G5x"/>
+                    <constraint firstAttribute="bottom" secondItem="egp-3l-yey" secondAttribute="bottom" id="bIz-YU-bDJ"/>
+                    <constraint firstItem="egp-3l-yey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lvc-VV-JIc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
