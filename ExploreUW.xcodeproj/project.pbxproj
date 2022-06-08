@@ -41,6 +41,7 @@
 		7A6EDF59284A8CF60060AA00 /* Open Sans 700italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EDF55284A8CF60060AA00 /* Open Sans 700italic.ttf */; };
 		7A6EDF5A284A8CF60060AA00 /* Open Sans italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EDF56284A8CF60060AA00 /* Open Sans italic.ttf */; };
 		7A6EDF5B284A8CF60060AA00 /* Open Sans 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EDF57284A8CF60060AA00 /* Open Sans 700.ttf */; };
+		7A71DA422850242E00DBD4C9 /* RSOs.json in Resources */ = {isa = PBXBuildFile; fileRef = ED195256284FCE17006BA79E /* RSOs.json */; };
 		7AA4DE59284A9561009F3CA3 /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4DE58284A9561009F3CA3 /* Events.json */; };
 		7ADA2AC22848059A00909778 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC12848059A00909778 /* TableViewCell.swift */; };
 		7ADA2AC428480DF200909778 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC328480DF200909778 /* Event.swift */; };
@@ -48,31 +49,9 @@
 		7ADA2AC82848204E00909778 /* TableViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC72848204D00909778 /* TableViewDetail.swift */; };
 		ED1566FA2849E1D5004D3FD1 /* RSOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1566F92849E1D5004D3FD1 /* RSOViewController.swift */; };
 		ED1566FC284A8906004D3FD1 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FB284A8906004D3FD1 /* Fonts */; };
-		ED156706284A8C36004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FD284A8C35004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf */; };
-		ED156707284A8C36004D3FD1 /* EncodeSansNormal-200-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FE284A8C35004D3FD1 /* EncodeSansNormal-200-ExtraLight.ttf */; };
-		ED156708284A8C36004D3FD1 /* EncodeSansNormal-400-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FF284A8C35004D3FD1 /* EncodeSansNormal-400-Regular.ttf */; };
-		ED156709284A8C36004D3FD1 /* EncodeSansNormal-800-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156700284A8C35004D3FD1 /* EncodeSansNormal-800-ExtraBold.ttf */; };
-		ED15670A284A8C36004D3FD1 /* EncodeSansNormal-500-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156701284A8C35004D3FD1 /* EncodeSansNormal-500-Medium.ttf */; };
-		ED15670B284A8C36004D3FD1 /* EncodeSansNormal-300-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156702284A8C35004D3FD1 /* EncodeSansNormal-300-Light.ttf */; };
-		ED15670C284A8C36004D3FD1 /* EncodeSansNormal-700-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156703284A8C35004D3FD1 /* EncodeSansNormal-700-Bold.ttf */; };
-		ED15670D284A8C36004D3FD1 /* EncodeSansNormal-100-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156704284A8C35004D3FD1 /* EncodeSansNormal-100-Thin.ttf */; };
-		ED15670E284A8C36004D3FD1 /* EncodeSansNormal-900-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156705284A8C35004D3FD1 /* EncodeSansNormal-900-Black.ttf */; };
-		ED15671B284A8D0E004D3FD1 /* Open Sans 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED15670F284A8D0D004D3FD1 /* Open Sans 600.ttf */; };
-		ED15671C284A8D0E004D3FD1 /* Open Sans 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156710284A8D0D004D3FD1 /* Open Sans 800.ttf */; };
-		ED15671D284A8D0E004D3FD1 /* Open Sans 800italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156711284A8D0E004D3FD1 /* Open Sans 800italic.ttf */; };
-		ED15671E284A8D0E004D3FD1 /* Open Sans regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156712284A8D0E004D3FD1 /* Open Sans regular.ttf */; };
-		ED15671F284A8D0E004D3FD1 /* Open Sans 700italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156713284A8D0E004D3FD1 /* Open Sans 700italic.ttf */; };
-		ED156720284A8D0E004D3FD1 /* Open Sans 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156714284A8D0E004D3FD1 /* Open Sans 300.ttf */; };
-		ED156721284A8D0E004D3FD1 /* Open Sans Condensed 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156715284A8D0E004D3FD1 /* Open Sans Condensed 300.ttf */; };
-		ED156722284A8D0E004D3FD1 /* Open Sans 600italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156716284A8D0E004D3FD1 /* Open Sans 600italic.ttf */; };
-		ED156723284A8D0E004D3FD1 /* Open Sans italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156717284A8D0E004D3FD1 /* Open Sans italic.ttf */; };
-		ED156724284A8D0E004D3FD1 /* Open Sans Condensed 300italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156718284A8D0E004D3FD1 /* Open Sans Condensed 300italic.ttf */; };
-		ED156725284A8D0E004D3FD1 /* Open Sans 300italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED156719284A8D0E004D3FD1 /* Open Sans 300italic.ttf */; };
-		ED156726284A8D0E004D3FD1 /* Open Sans 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED15671A284A8D0E004D3FD1 /* Open Sans 700.ttf */; };
 		ED195251284DE63F006BA79E /* RSOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED195250284DE63F006BA79E /* RSOTableViewCell.swift */; };
 		ED195253284F01A8006BA79E /* RSOPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED195252284F01A8006BA79E /* RSOPopoverViewController.swift */; };
 		ED195255284F2ADF006BA79E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED195254284F2ADF006BA79E /* RegisterViewController.swift */; };
-		ED195257284FCE17006BA79E /* RSOs.json in Resources */ = {isa = PBXBuildFile; fileRef = ED195256284FCE17006BA79E /* RSOs.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,27 +117,6 @@
 		7ADA2AC72848204D00909778 /* TableViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDetail.swift; sourceTree = "<group>"; };
 		ED1566F92849E1D5004D3FD1 /* RSOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RSOViewController.swift; path = RSO/RSOViewController.swift; sourceTree = "<group>"; };
 		ED1566FB284A8906004D3FD1 /* Fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fonts; path = ExploreUW/Fonts; sourceTree = SOURCE_ROOT; };
-		ED1566FD284A8C35004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-600-SemiBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-600-SemiBold.ttf"; sourceTree = "<group>"; };
-		ED1566FE284A8C35004D3FD1 /* EncodeSansNormal-200-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-200-ExtraLight.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-200-ExtraLight.ttf"; sourceTree = "<group>"; };
-		ED1566FF284A8C35004D3FD1 /* EncodeSansNormal-400-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-400-Regular.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-400-Regular.ttf"; sourceTree = "<group>"; };
-		ED156700284A8C35004D3FD1 /* EncodeSansNormal-800-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-800-ExtraBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-800-ExtraBold.ttf"; sourceTree = "<group>"; };
-		ED156701284A8C35004D3FD1 /* EncodeSansNormal-500-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-500-Medium.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-500-Medium.ttf"; sourceTree = "<group>"; };
-		ED156702284A8C35004D3FD1 /* EncodeSansNormal-300-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-300-Light.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-300-Light.ttf"; sourceTree = "<group>"; };
-		ED156703284A8C35004D3FD1 /* EncodeSansNormal-700-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-700-Bold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-700-Bold.ttf"; sourceTree = "<group>"; };
-		ED156704284A8C35004D3FD1 /* EncodeSansNormal-100-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-100-Thin.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-100-Thin.ttf"; sourceTree = "<group>"; };
-		ED156705284A8C35004D3FD1 /* EncodeSansNormal-900-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-900-Black.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-900-Black.ttf"; sourceTree = "<group>"; };
-		ED15670F284A8D0D004D3FD1 /* Open Sans 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 600.ttf"; path = "ExploreUW/Fonts/Open Sans 600.ttf"; sourceTree = "<group>"; };
-		ED156710284A8D0D004D3FD1 /* Open Sans 800.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 800.ttf"; path = "ExploreUW/Fonts/Open Sans 800.ttf"; sourceTree = "<group>"; };
-		ED156711284A8D0E004D3FD1 /* Open Sans 800italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 800italic.ttf"; path = "ExploreUW/Fonts/Open Sans 800italic.ttf"; sourceTree = "<group>"; };
-		ED156712284A8D0E004D3FD1 /* Open Sans regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans regular.ttf"; path = "ExploreUW/Fonts/Open Sans regular.ttf"; sourceTree = "<group>"; };
-		ED156713284A8D0E004D3FD1 /* Open Sans 700italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 700italic.ttf"; path = "ExploreUW/Fonts/Open Sans 700italic.ttf"; sourceTree = "<group>"; };
-		ED156714284A8D0E004D3FD1 /* Open Sans 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 300.ttf"; path = "ExploreUW/Fonts/Open Sans 300.ttf"; sourceTree = "<group>"; };
-		ED156715284A8D0E004D3FD1 /* Open Sans Condensed 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans Condensed 300.ttf"; path = "ExploreUW/Fonts/Open Sans Condensed 300.ttf"; sourceTree = "<group>"; };
-		ED156716284A8D0E004D3FD1 /* Open Sans 600italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 600italic.ttf"; path = "ExploreUW/Fonts/Open Sans 600italic.ttf"; sourceTree = "<group>"; };
-		ED156717284A8D0E004D3FD1 /* Open Sans italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans italic.ttf"; path = "ExploreUW/Fonts/Open Sans italic.ttf"; sourceTree = "<group>"; };
-		ED156718284A8D0E004D3FD1 /* Open Sans Condensed 300italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans Condensed 300italic.ttf"; path = "ExploreUW/Fonts/Open Sans Condensed 300italic.ttf"; sourceTree = "<group>"; };
-		ED156719284A8D0E004D3FD1 /* Open Sans 300italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 300italic.ttf"; path = "ExploreUW/Fonts/Open Sans 300italic.ttf"; sourceTree = "<group>"; };
-		ED15671A284A8D0E004D3FD1 /* Open Sans 700.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 700.ttf"; path = "ExploreUW/Fonts/Open Sans 700.ttf"; sourceTree = "<group>"; };
 		ED195250284DE63F006BA79E /* RSOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RSOTableViewCell.swift; path = RSO/RSOTableViewCell.swift; sourceTree = "<group>"; };
 		ED195252284F01A8006BA79E /* RSOPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSOPopoverViewController.swift; sourceTree = "<group>"; };
 		ED195254284F2ADF006BA79E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -397,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A71DA422850242E00DBD4C9 /* RSOs.json in Resources */,
 				7A6EDF58284A8CF60060AA00 /* Open Sans regular.ttf in Resources */,
 				7A6EDF59284A8CF60060AA00 /* Open Sans 700italic.ttf in Resources */,
 				7A6EDF5A284A8CF60060AA00 /* Open Sans italic.ttf in Resources */,
