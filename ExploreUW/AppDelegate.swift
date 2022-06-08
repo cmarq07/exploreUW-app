@@ -14,28 +14,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         let font = UIFont(name:"Encode Sans Normal", size: 14.0)
         let boldFont = UIFont(name:"Encode Sans Normal Bold", size: 14.0)
-        
+
         let normalTextAttributes = [
             NSAttributedString.Key.font: font, NSAttributedString.Key.foregroundColor: UIColorFromRGB(0xD2B476)
         ]
-        
+
         let selectedTextAttributes = [
             NSAttributedString.Key.font: boldFont
         ]
-        
+
         UITabBarItem.appearance().setTitleTextAttributes(normalTextAttributes as [NSAttributedString.Key : Any], for: .normal)
-        
+
         UITabBarItem.appearance().setTitleTextAttributes(selectedTextAttributes as [NSAttributedString.Key : Any], for: .selected)
-        
+
         UITabBarItem.appearance().badgeColor = UIColorFromRGB(0x85754D)
-        
+
         let tabBarItemAppearance = UITabBarItemAppearance()
         tabBarItemAppearance.normal.titleTextAttributes = normalTextAttributes as [NSAttributedString.Key : Any]
         tabBarItemAppearance.selected.titleTextAttributes = selectedTextAttributes as [NSAttributedString.Key : Any]
-        
+
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.inlineLayoutAppearance = tabBarItemAppearance
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
@@ -49,10 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarAppearance.stackedLayoutAppearance.normal.badgeTextAttributes = [
             NSAttributedString.Key.font: boldFont as Any, NSAttributedString.Key.foregroundColor: UIColor.black
         ]
-        
+
         UITabBar.appearance().standardAppearance = tabBarAppearance
-        
+
         return true
+         
     }
     
     // MARK: UISceneSession Lifecycle

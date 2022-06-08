@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,6 +31,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+<<<<<<< HEAD
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="egp-3l-yey">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="584"/>
                         <subviews>
@@ -52,12 +53,90 @@
                                         <rect key="frame" x="221" y="0.0" width="34.5" height="45"/>
                                         <fontDescription key="fontDescription" name="EncodeSansNormal-Black" family="Encode Sans Normal" pointSize="28"/>
                                         <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+=======
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
+                        <rect key="frame" x="0.0" y="53" width="79" height="29"/>
+
+                        <attributedString key="attributedText">
+                            <fragment content="College">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="24"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-fF-5TP">
+                        <rect key="frame" x="0.0" y="90" width="96" height="21.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Department">
+                                <attributes>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmU-ZI-h8G">
+                        <rect key="frame" x="0.0" y="118.5" width="56.5" height="22.5"/>
+
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prerequisites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-i2-Ab8">
+
+                        <rect key="frame" x="0.0" y="221" width="117.5" height="22.5"/>
+
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum overall GPA: 2.5 Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline Anotherline" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RK7-fg-uci">
+
+                        <rect key="frame" x="0.0" y="251.5" width="320" height="174.5"/>
+
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Note" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFi-Zi-W5g">
+
+                        <rect key="frame" x="0.0" y="466.5" width="320" height="97.5"/>
+
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-vl-vSn">
+
+                        <rect key="frame" x="0.0" y="436" width="53" height="22.5"/>
+
+                        <fontDescription key="fontDescription" name="EncodeSansNormal-SemiBold" family="Encode Sans Normal" pointSize="18"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-bA-HFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="235.5" height="42"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XEU-df-Ydv">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MajorName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="PVo-6K-eIr">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="42"/>
+                                        <fontDescription key="fontDescription" name="EncodeSansNormal-Bold" family="Encode Sans Normal" pointSize="36"/>
+                                        <color key="textColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+>>>>>>> 73b8d8857869ca8ac3d28461e7fd2fe13cd77638
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.52156862749999999" green="0.45882352939999999" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <size key="shadowOffset" width="0.0" height="4"/>
                                     </label>
                                 </subviews>
                             </stackView>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-Tq-lId">
                                 <rect key="frame" x="0.0" y="53" width="73.5" height="24"/>
                                 <attributedString key="attributedText">
@@ -125,10 +204,34 @@
                                 <rect key="frame" x="0.0" y="467" width="36.5" height="117"/>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJF-OW-Uct">
+                                <rect key="frame" x="195" y="0.0" width="40.5" height="42"/>
+                                <fontDescription key="fontDescription" name="EncodeSansNormal-Black" family="Encode Sans Normal" pointSize="28"/>
+                                <color key="textColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+>>>>>>> 73b8d8857869ca8ac3d28461e7fd2fe13cd77638
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
+<<<<<<< HEAD
+=======
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7u-So-sHS">
+
+                        <rect key="frame" x="0.0" y="148.5" width="320" height="64.5"/>
+
+                        <attributedString key="attributedText">
+                            <fragment content="Track1, Track2, LongerTrack3, LongestTrackThere4, JustOneMoreTrack5">
+                                <attributes>
+                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="system" size="18"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+>>>>>>> 73b8d8857869ca8ac3d28461e7fd2fe13cd77638
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
