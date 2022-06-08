@@ -46,6 +46,11 @@
 		7ADA2AC428480DF200909778 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC328480DF200909778 /* Event.swift */; };
 		7ADA2AC628480EF900909778 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC528480EF900909778 /* EventViewController.swift */; };
 		7ADA2AC82848204E00909778 /* TableViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA2AC72848204D00909778 /* TableViewDetail.swift */; };
+		9D733E48285000D900124648 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D733E47285000D900124648 /* GoogleService-Info.plist */; };
+		9D733E502850051C00124648 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9D733E4F2850051C00124648 /* FirebaseAuth */; };
+		9D733E522850051C00124648 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9D733E512850051C00124648 /* FirebaseAuthCombine-Community */; };
+		9D733E5428500C7500124648 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D733E5328500C7500124648 /* LoginViewController.swift */; };
+		9D733E5628500EB200124648 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D733E5528500EB200124648 /* signUpViewController.swift */; };
 		ED1566FA2849E1D5004D3FD1 /* RSOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1566F92849E1D5004D3FD1 /* RSOViewController.swift */; };
 		ED1566FC284A8906004D3FD1 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FB284A8906004D3FD1 /* Fonts */; };
 		ED156706284A8C36004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED1566FD284A8C35004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf */; };
@@ -136,6 +141,9 @@
 		7ADA2AC328480DF200909778 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7ADA2AC528480EF900909778 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		7ADA2AC72848204D00909778 /* TableViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDetail.swift; sourceTree = "<group>"; };
+		9D733E47285000D900124648 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9D733E5328500C7500124648 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ExploreUW/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		9D733E5528500EB200124648 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		ED1566F92849E1D5004D3FD1 /* RSOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RSOViewController.swift; path = RSO/RSOViewController.swift; sourceTree = "<group>"; };
 		ED1566FB284A8906004D3FD1 /* Fonts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fonts; path = ExploreUW/Fonts; sourceTree = SOURCE_ROOT; };
 		ED1566FD284A8C35004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-600-SemiBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-600-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -170,6 +178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D733E502850051C00124648 /* FirebaseAuth in Frameworks */,
+				9D733E522850051C00124648 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +217,7 @@
 				0AA90AC2284809F900DE4CCC /* MajorViewCell.swift */,
 				0AA90AC3284809F900DE4CCC /* MajorViewCell.xib */,
 				0AFEB6E12849144C00CF94C0 /* MajorClass.swift */,
+				9D733E5328500C7500124648 /* LoginViewController.swift */,
 			);
 			path = Majors;
 			sourceTree = "<group>";
@@ -254,11 +265,13 @@
 		0AD24BC62836FCC20048C828 /* ExploreUW */ = {
 			isa = PBXGroup;
 			children = (
+				9D733E47285000D900124648 /* GoogleService-Info.plist */,
 				ED1566FB284A8906004D3FD1 /* Fonts */,
 				0A2EA0B8284572B800664FA1 /* Data */,
 				0A2EA0BD284578E900664FA1 /* Majors */,
 				0AD24BC72836FCC20048C828 /* AppDelegate.swift */,
 				0AD24BC92836FCC20048C828 /* SceneDelegate.swift */,
+				9D733E5528500EB200124648 /* signUpViewController.swift */,
 				0AD24BCB2836FCC20048C828 /* ViewController.swift */,
 				7ADA2AC528480EF900909778 /* EventViewController.swift */,
 				7ADA2AC12848059A00909778 /* TableViewCell.swift */,
@@ -309,6 +322,10 @@
 			dependencies = (
 			);
 			name = ExploreUW;
+			packageProductDependencies = (
+				9D733E4F2850051C00124648 /* FirebaseAuth */,
+				9D733E512850051C00124648 /* FirebaseAuthCombine-Community */,
+			);
 			productName = ExploreUW;
 			productReference = 0AD24BC42836FCC20048C828 /* ExploreUW.app */;
 			productType = "com.apple.product-type.application";
@@ -381,6 +398,9 @@
 				Base,
 			);
 			mainGroup = 0AD24BBB2836FCC20048C828;
+			packageReferences = (
+				9D733E4E2850051C00124648 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0AD24BC52836FCC20048C828 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				7A6EDF58284A8CF60060AA00 /* Open Sans regular.ttf in Resources */,
 				7A6EDF59284A8CF60060AA00 /* Open Sans 700italic.ttf in Resources */,
 				7A6EDF5A284A8CF60060AA00 /* Open Sans italic.ttf in Resources */,
@@ -417,6 +438,31 @@
 				7A6EDF3F284A8CA00060AA00 /* Fontfabric - UniSansRegular.otf in Resources */,
 				7A6EDF40284A8CA00060AA00 /* Fontfabric - UniSansRegularItalic.otf in Resources */,
 				7A6EDF41284A8CA00060AA00 /* Fontfabric - UniSansLightItalic.otf in Resources */,
+=======
+				ED15671B284A8D0E004D3FD1 /* Open Sans 600.ttf in Resources */,
+				ED15671C284A8D0E004D3FD1 /* Open Sans 800.ttf in Resources */,
+				ED15671D284A8D0E004D3FD1 /* Open Sans 800italic.ttf in Resources */,
+				ED15671E284A8D0E004D3FD1 /* Open Sans regular.ttf in Resources */,
+				ED15671F284A8D0E004D3FD1 /* Open Sans 700italic.ttf in Resources */,
+				ED156720284A8D0E004D3FD1 /* Open Sans 300.ttf in Resources */,
+				ED156721284A8D0E004D3FD1 /* Open Sans Condensed 300.ttf in Resources */,
+				ED156722284A8D0E004D3FD1 /* Open Sans 600italic.ttf in Resources */,
+				ED156723284A8D0E004D3FD1 /* Open Sans italic.ttf in Resources */,
+				ED156724284A8D0E004D3FD1 /* Open Sans Condensed 300italic.ttf in Resources */,
+				ED195257284FCE17006BA79E /* RSOs.json in Resources */,
+				ED156725284A8D0E004D3FD1 /* Open Sans 300italic.ttf in Resources */,
+				ED156726284A8D0E004D3FD1 /* Open Sans 700.ttf in Resources */,
+				ED156706284A8C36004D3FD1 /* EncodeSansNormal-600-SemiBold.ttf in Resources */,
+				ED156707284A8C36004D3FD1 /* EncodeSansNormal-200-ExtraLight.ttf in Resources */,
+				ED156708284A8C36004D3FD1 /* EncodeSansNormal-400-Regular.ttf in Resources */,
+				ED156709284A8C36004D3FD1 /* EncodeSansNormal-800-ExtraBold.ttf in Resources */,
+				9D733E48285000D900124648 /* GoogleService-Info.plist in Resources */,
+				ED15670A284A8C36004D3FD1 /* EncodeSansNormal-500-Medium.ttf in Resources */,
+				ED15670B284A8C36004D3FD1 /* EncodeSansNormal-300-Light.ttf in Resources */,
+				ED15670C284A8C36004D3FD1 /* EncodeSansNormal-700-Bold.ttf in Resources */,
+				ED15670D284A8C36004D3FD1 /* EncodeSansNormal-100-Thin.ttf in Resources */,
+				ED15670E284A8C36004D3FD1 /* EncodeSansNormal-900-Black.ttf in Resources */,
+>>>>>>> Stashed changes
 				0A2EA0BC284572FB00664FA1 /* Majors.json in Resources */,
 				0AFEB6E42849152A00CF94C0 /* .gitignore in Resources */,
 				0AD24BD42836FCC40048C828 /* LaunchScreen.storyboard in Resources */,
@@ -451,12 +497,14 @@
 				0A2EA0BF2845792C00664FA1 /* MajorsViewController.swift in Sources */,
 				0AA90AC4284809F900DE4CCC /* MajorViewCell.swift in Sources */,
 				ED1566FA2849E1D5004D3FD1 /* RSOViewController.swift in Sources */,
+				9D733E5428500C7500124648 /* LoginViewController.swift in Sources */,
 				0AD24BCC2836FCC20048C828 /* ViewController.swift in Sources */,
 				7ADA2AC22848059A00909778 /* TableViewCell.swift in Sources */,
 				0AFEB6E22849144C00CF94C0 /* MajorClass.swift in Sources */,
 				0AD24BC82836FCC20048C828 /* AppDelegate.swift in Sources */,
 				0AD24BCA2836FCC20048C828 /* SceneDelegate.swift in Sources */,
 				ED195251284DE63F006BA79E /* RSOTableViewCell.swift in Sources */,
+				9D733E5628500EB200124648 /* signUpViewController.swift in Sources */,
 				ED195255284F2ADF006BA79E /* RegisterViewController.swift in Sources */,
 				7ADA2AC428480DF200909778 /* Event.swift in Sources */,
 				ED195253284F01A8006BA79E /* RSOPopoverViewController.swift in Sources */,
@@ -811,6 +859,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D733E4E2850051C00124648 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D733E4F2850051C00124648 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D733E4E2850051C00124648 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9D733E512850051C00124648 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D733E4E2850051C00124648 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0AD24BBC2836FCC20048C828 /* Project object */;
 }
