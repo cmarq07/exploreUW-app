@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vun-mp-BcG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vun-mp-BcG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -332,15 +332,25 @@ Cg
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-kc-7GW">
+                                <rect key="frame" x="354" y="45" width="40" height="40"/>
+                                <color key="tintColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="imU-yP-iH1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cqg-2A-HVm"/>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="leading" secondItem="Bw9-hc-hMV" secondAttribute="leadingMargin" id="2FE-iw-8kJ"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="leading" secondItem="cqg-2A-HVm" secondAttribute="leading" id="E6g-aO-eYn"/>
+                            <constraint firstItem="g5k-2H-2m5" firstAttribute="top" secondItem="X6L-kc-7GW" secondAttribute="bottom" constant="8" symbolic="YES" id="KPj-Dd-mOz"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="trailing" secondItem="cqg-2A-HVm" secondAttribute="trailing" id="L1D-Lj-peS"/>
                             <constraint firstItem="hJ7-tR-0OD" firstAttribute="top" secondItem="cqg-2A-HVm" secondAttribute="top" id="L3M-is-NJN"/>
                             <constraint firstItem="cqg-2A-HVm" firstAttribute="bottom" secondItem="g5k-2H-2m5" secondAttribute="bottom" constant="15" id="XH6-PZ-Y7Q"/>
+                            <constraint firstItem="X6L-kc-7GW" firstAttribute="top" secondItem="Bw9-hc-hMV" secondAttribute="topMargin" constant="-1" id="lQc-YQ-bKh"/>
+                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="leading" secondItem="Bw9-hc-hMV" secondAttribute="leadingMargin" id="oNP-hP-x23"/>
+                            <constraint firstItem="X6L-kc-7GW" firstAttribute="trailing" secondItem="Bw9-hc-hMV" secondAttribute="trailingMargin" id="r8G-FR-waS"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="top" secondItem="hJ7-tR-0OD" secondAttribute="bottom" constant="19" id="rdh-Cc-bqY"/>
                         </constraints>
                     </view>
@@ -350,6 +360,7 @@ Cg
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MajorsTable" destination="drq-VA-w1g" id="hfe-w3-S2M"/>
+                        <outlet property="connectionImage" destination="X6L-kc-7GW" id="ab6-Nz-NQY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ME-oe-WV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -458,10 +469,10 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-4L-byE">
-                                <rect key="frame" x="22" y="243" width="370" height="400"/>
+                                <rect key="frame" x="22" y="204" width="370" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsk-aJ-JKm">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="16.5"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -504,6 +515,7 @@ Cg
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r73-aW-jRa">
                                         <rect key="frame" x="8" y="92" width="398" height="603"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
@@ -806,20 +818,26 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkM-TE-Ai8">
+                                <rect key="frame" x="75" y="58" width="264" height="42"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="36"/>
+                                <color key="textColor" red="0.85884696250000003" green="0.75293332339999997" blue="0.53335446119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvg-RX-YbF">
-                                <rect key="frame" x="48" y="176" width="318" height="21"/>
+                                <rect key="frame" x="48" y="132" width="318" height="21"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc1-5o-E39">
-                                <rect key="frame" x="117" y="715" width="181" height="20.5"/>
+                                <rect key="frame" x="117" y="681" width="181" height="20.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJv-eH-Dpq">
-                                <rect key="frame" x="324" y="63" width="61" height="31"/>
+                                <rect key="frame" x="324" y="19" width="61" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Close">
                                     <color key="baseForegroundColor" red="0.85884696250000003" green="0.75293332339999997" blue="0.53335446119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -829,6 +847,7 @@ Cg
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJg-ZD-gGF">
+                                <rect key="frame" x="164" y="634" width="86" height="28"/>
                                 <rect key="frame" x="164" y="668" width="86" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="86" id="9zr-H1-frl"/>
@@ -885,6 +904,7 @@ Cg
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="wifi" catalog="system" width="128" height="91"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A21A9F3284FE02E00387DDE /* ExploreUW.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A21A9F2284FE02E00387DDE /* ExploreUW.png */; };
 		0A2EA0BC284572FB00664FA1 /* Majors.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2EA0BB284572FB00664FA1 /* Majors.json */; };
 		0A2EA0BF2845792C00664FA1 /* MajorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2EA0BE2845792C00664FA1 /* MajorsViewController.swift */; };
 		0AA90AC4284809F900DE4CCC /* MajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA90AC2284809F900DE4CCC /* MajorViewCell.swift */; };
@@ -20,6 +21,33 @@
 		0AD24BDF2836FCC40048C828 /* ExploreUWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD24BDE2836FCC40048C828 /* ExploreUWTests.swift */; };
 		0AD24BE92836FCC40048C828 /* ExploreUWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD24BE82836FCC40048C828 /* ExploreUWUITests.swift */; };
 		0AD24BEB2836FCC40048C828 /* ExploreUWUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD24BEA2836FCC40048C828 /* ExploreUWUITestsLaunchTests.swift */; };
+		0AF0FB2B284FD47700936E33 /* Fontfabric - UniSansBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D796283DC95B009A8B16 /* Fontfabric - UniSansBook.otf */; };
+		0AF0FB2C284FD47700936E33 /* Fontfabric - UniSansBookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D795283DC95B009A8B16 /* Fontfabric - UniSansBookItalic.otf */; };
+		0AF0FB2D284FD47700936E33 /* Fontfabric - UniSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D799283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */; };
+		0AF0FB2E284FD47700936E33 /* Fontfabric - UniSansLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D794283DC95B009A8B16 /* Fontfabric - UniSansLightItalic.otf */; };
+		0AF0FB2F284FD47700936E33 /* Fontfabric - UniSansRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D797283DC95B009A8B16 /* Fontfabric - UniSansRegular.otf */; };
+		0AF0FB31284FD47700936E33 /* Open Sans 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77D283DC942009A8B16 /* Open Sans 300.ttf */; };
+		0AF0FB32284FD47700936E33 /* Open Sans 300italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77C283DC942009A8B16 /* Open Sans 300italic.ttf */; };
+		0AF0FB33284FD47700936E33 /* Open Sans 600.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D787283DC943009A8B16 /* Open Sans 600.ttf */; };
+		0AF0FB34284FD47700936E33 /* Open Sans 600italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D781283DC943009A8B16 /* Open Sans 600italic.ttf */; };
+		0AF0FB35284FD47700936E33 /* Open Sans 700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77E283DC943009A8B16 /* Open Sans 700.ttf */; };
+		0AF0FB36284FD47700936E33 /* Open Sans 700italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D786283DC943009A8B16 /* Open Sans 700italic.ttf */; };
+		0AF0FB37284FD47700936E33 /* Open Sans 800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D782283DC943009A8B16 /* Open Sans 800.ttf */; };
+		0AF0FB38284FD47700936E33 /* Open Sans 800italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D780283DC943009A8B16 /* Open Sans 800italic.ttf */; };
+		0AF0FB39284FD47700936E33 /* Open Sans Condensed 300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D785283DC943009A8B16 /* Open Sans Condensed 300.ttf */; };
+		0AF0FB3A284FD47700936E33 /* Open Sans Condensed 300italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D783283DC943009A8B16 /* Open Sans Condensed 300italic.ttf */; };
+		0AF0FB3B284FD47700936E33 /* Open Sans italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D77F283DC943009A8B16 /* Open Sans italic.ttf */; };
+		0AF0FB3C284FD47700936E33 /* Open Sans regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D784283DC943009A8B16 /* Open Sans regular.ttf */; };
+		0AF0FB3E284FD47700936E33 /* EncodeSansNormal-200-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76B283DC920009A8B16 /* EncodeSansNormal-200-ExtraLight.ttf */; };
+		0AF0FB3F284FD47700936E33 /* EncodeSansNormal-300-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D772283DC920009A8B16 /* EncodeSansNormal-300-Light.ttf */; };
+		0AF0FB40284FD47700936E33 /* EncodeSansNormal-400-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76F283DC920009A8B16 /* EncodeSansNormal-400-Regular.ttf */; };
+		0AF0FB41284FD47700936E33 /* EncodeSansNormal-500-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76E283DC920009A8B16 /* EncodeSansNormal-500-Medium.ttf */; };
+		0AF0FB42284FD47700936E33 /* EncodeSansNormal-600-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76C283DC920009A8B16 /* EncodeSansNormal-600-SemiBold.ttf */; };
+		0AF0FB43284FD47700936E33 /* EncodeSansNormal-700-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76A283DC920009A8B16 /* EncodeSansNormal-700-Bold.ttf */; };
+		0AF0FB44284FD47700936E33 /* EncodeSansNormal-800-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D771283DC920009A8B16 /* EncodeSansNormal-800-ExtraBold.ttf */; };
+		0AF0FB45284FD47700936E33 /* EncodeSansNormal-900-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D770283DC920009A8B16 /* EncodeSansNormal-900-Black.ttf */; };
+		0AF0FB46284FD4AC00936E33 /* EncodeSansNormal-100-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A21D76D283DC920009A8B16 /* EncodeSansNormal-100-Thin.ttf */; };
+		0AF0FB48284FD74800936E33 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0FB47284FD74800936E33 /* Reachability.swift */; };
 		0AFEB6E22849144C00CF94C0 /* MajorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFEB6E12849144C00CF94C0 /* MajorClass.swift */; };
 		0AFEB6E42849152A00CF94C0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0AFEB6E32849152A00CF94C0 /* .gitignore */; };
 		7A6EDF3C284A8CA00060AA00 /* Fontfabric - UniSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7A6EDF36284A8CA00060AA00 /* Fontfabric - UniSansLight.otf */; };
@@ -72,6 +100,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A21A9F2284FE02E00387DDE /* ExploreUW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ExploreUW.png; path = ExploreUW/Images/ExploreUW.png; sourceTree = SOURCE_ROOT; };
+		0A21D76A283DC920009A8B16 /* EncodeSansNormal-700-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-700-Bold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-700-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D76B283DC920009A8B16 /* EncodeSansNormal-200-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-200-ExtraLight.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-200-ExtraLight.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D76C283DC920009A8B16 /* EncodeSansNormal-600-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-600-SemiBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-600-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D76D283DC920009A8B16 /* EncodeSansNormal-100-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-100-Thin.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-100-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D76E283DC920009A8B16 /* EncodeSansNormal-500-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-500-Medium.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-500-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D76F283DC920009A8B16 /* EncodeSansNormal-400-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-400-Regular.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-400-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D770283DC920009A8B16 /* EncodeSansNormal-900-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-900-Black.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-900-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D771283DC920009A8B16 /* EncodeSansNormal-800-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-800-ExtraBold.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-800-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D772283DC920009A8B16 /* EncodeSansNormal-300-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "EncodeSansNormal-300-Light.ttf"; path = "ExploreUW/Fonts/EncodeSansNormal-300-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D77C283DC942009A8B16 /* Open Sans 300italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 300italic.ttf"; path = "ExploreUW/Fonts/Open Sans 300italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D77D283DC942009A8B16 /* Open Sans 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 300.ttf"; path = "ExploreUW/Fonts/Open Sans 300.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D77E283DC943009A8B16 /* Open Sans 700.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 700.ttf"; path = "ExploreUW/Fonts/Open Sans 700.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D77F283DC943009A8B16 /* Open Sans italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans italic.ttf"; path = "ExploreUW/Fonts/Open Sans italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D780283DC943009A8B16 /* Open Sans 800italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 800italic.ttf"; path = "ExploreUW/Fonts/Open Sans 800italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D781283DC943009A8B16 /* Open Sans 600italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 600italic.ttf"; path = "ExploreUW/Fonts/Open Sans 600italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D782283DC943009A8B16 /* Open Sans 800.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 800.ttf"; path = "ExploreUW/Fonts/Open Sans 800.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D783283DC943009A8B16 /* Open Sans Condensed 300italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans Condensed 300italic.ttf"; path = "ExploreUW/Fonts/Open Sans Condensed 300italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D784283DC943009A8B16 /* Open Sans regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans regular.ttf"; path = "ExploreUW/Fonts/Open Sans regular.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D785283DC943009A8B16 /* Open Sans Condensed 300.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans Condensed 300.ttf"; path = "ExploreUW/Fonts/Open Sans Condensed 300.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D786283DC943009A8B16 /* Open Sans 700italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 700italic.ttf"; path = "ExploreUW/Fonts/Open Sans 700italic.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D787283DC943009A8B16 /* Open Sans 600.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Open Sans 600.ttf"; path = "ExploreUW/Fonts/Open Sans 600.ttf"; sourceTree = SOURCE_ROOT; };
+		0A21D794283DC95B009A8B16 /* Fontfabric - UniSansLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansLightItalic.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansLightItalic.otf"; sourceTree = SOURCE_ROOT; };
+		0A21D795283DC95B009A8B16 /* Fontfabric - UniSansBookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansBookItalic.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansBookItalic.otf"; sourceTree = SOURCE_ROOT; };
+		0A21D796283DC95B009A8B16 /* Fontfabric - UniSansBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansBook.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansBook.otf"; sourceTree = SOURCE_ROOT; };
+		0A21D797283DC95B009A8B16 /* Fontfabric - UniSansRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansRegular.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansRegular.otf"; sourceTree = SOURCE_ROOT; };
+		0A21D798283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansLight.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansLight.otf"; sourceTree = SOURCE_ROOT; };
+		0A21D799283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansLight.otf"; path = "ExploreUW/Fonts/Fontfabric - UniSansLight.otf"; sourceTree = SOURCE_ROOT; };
 		0A2EA0BB284572FB00664FA1 /* Majors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Majors.json; path = ExploreUW/Majors.json; sourceTree = SOURCE_ROOT; };
 		0A2EA0BE2845792C00664FA1 /* MajorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorsViewController.swift; sourceTree = "<group>"; };
 		0AA90AC2284809F900DE4CCC /* MajorViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorViewCell.swift; sourceTree = "<group>"; };
@@ -89,6 +145,7 @@
 		0AD24BE42836FCC40048C828 /* ExploreUWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploreUWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD24BE82836FCC40048C828 /* ExploreUWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUWUITests.swift; sourceTree = "<group>"; };
 		0AD24BEA2836FCC40048C828 /* ExploreUWUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUWUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AF0FB47284FD74800936E33 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		0AFEB6E12849144C00CF94C0 /* MajorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorClass.swift; sourceTree = "<group>"; };
 		0AFEB6E32849152A00CF94C0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7A6EDF36284A8CA00060AA00 /* Fontfabric - UniSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Fontfabric - UniSansLight.otf"; path = "../../Downloads/UniSans (1)/Fontfabric - UniSansLight.otf"; sourceTree = "<group>"; };
@@ -148,6 +205,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A21A9EE284FDB4E00387DDE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A21A9F2284FE02E00387DDE /* ExploreUW.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0A21D769283DC8CD009A8B16 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0A21D796283DC95B009A8B16 /* Fontfabric - UniSansBook.otf */,
+				0A21D795283DC95B009A8B16 /* Fontfabric - UniSansBookItalic.otf */,
+				0A21D799283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */,
+				0A21D794283DC95B009A8B16 /* Fontfabric - UniSansLightItalic.otf */,
+				0A21D797283DC95B009A8B16 /* Fontfabric - UniSansRegular.otf */,
+				0A21D798283DC95B009A8B16 /* Fontfabric - UniSansLight.otf */,
+				0A21D77D283DC942009A8B16 /* Open Sans 300.ttf */,
+				0A21D77C283DC942009A8B16 /* Open Sans 300italic.ttf */,
+				0A21D787283DC943009A8B16 /* Open Sans 600.ttf */,
+				0A21D781283DC943009A8B16 /* Open Sans 600italic.ttf */,
+				0A21D77E283DC943009A8B16 /* Open Sans 700.ttf */,
+				0A21D786283DC943009A8B16 /* Open Sans 700italic.ttf */,
+				0A21D782283DC943009A8B16 /* Open Sans 800.ttf */,
+				0A21D780283DC943009A8B16 /* Open Sans 800italic.ttf */,
+				0A21D785283DC943009A8B16 /* Open Sans Condensed 300.ttf */,
+				0A21D783283DC943009A8B16 /* Open Sans Condensed 300italic.ttf */,
+				0A21D77F283DC943009A8B16 /* Open Sans italic.ttf */,
+				0A21D784283DC943009A8B16 /* Open Sans regular.ttf */,
+				0A21D76D283DC920009A8B16 /* EncodeSansNormal-100-Thin.ttf */,
+				0A21D76B283DC920009A8B16 /* EncodeSansNormal-200-ExtraLight.ttf */,
+				0A21D772283DC920009A8B16 /* EncodeSansNormal-300-Light.ttf */,
+				0A21D76F283DC920009A8B16 /* EncodeSansNormal-400-Regular.ttf */,
+				0A21D76E283DC920009A8B16 /* EncodeSansNormal-500-Medium.ttf */,
+				0A21D76C283DC920009A8B16 /* EncodeSansNormal-600-SemiBold.ttf */,
+				0A21D76A283DC920009A8B16 /* EncodeSansNormal-700-Bold.ttf */,
+				0A21D771283DC920009A8B16 /* EncodeSansNormal-800-ExtraBold.ttf */,
+				0A21D770283DC920009A8B16 /* EncodeSansNormal-900-Black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0A2EA0B8284572B800664FA1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +311,7 @@
 		0AD24BC62836FCC20048C828 /* ExploreUW */ = {
 			isa = PBXGroup;
 			children = (
+				0A21A9EE284FDB4E00387DDE /* Images */,
 				ED1566FB284A8906004D3FD1 /* Fonts */,
 				0A2EA0B8284572B800664FA1 /* Data */,
 				0A2EA0BD284578E900664FA1 /* Majors */,
@@ -226,6 +326,7 @@
 				ED195250284DE63F006BA79E /* RSOTableViewCell.swift */,
 				7ADA2AC328480DF200909778 /* Event.swift */,
 				7ADA2AC72848204D00909778 /* TableViewDetail.swift */,
+				0AF0FB47284FD74800936E33 /* Reachability.swift */,
 				0AD24BCD2836FCC20048C828 /* Main.storyboard */,
 				0AD24BD02836FCC40048C828 /* Assets.xcassets */,
 				0AD24BD22836FCC40048C828 /* LaunchScreen.storyboard */,
@@ -376,6 +477,7 @@
 				7A6EDF3F284A8CA00060AA00 /* Fontfabric - UniSansRegular.otf in Resources */,
 				7A6EDF40284A8CA00060AA00 /* Fontfabric - UniSansRegularItalic.otf in Resources */,
 				7A6EDF41284A8CA00060AA00 /* Fontfabric - UniSansLightItalic.otf in Resources */,
+
 				0A2EA0BC284572FB00664FA1 /* Majors.json in Resources */,
 				0AFEB6E42849152A00CF94C0 /* .gitignore in Resources */,
 				0AD24BD42836FCC40048C828 /* LaunchScreen.storyboard in Resources */,
@@ -415,6 +517,7 @@
 				0AFEB6E22849144C00CF94C0 /* MajorClass.swift in Sources */,
 				0AD24BC82836FCC20048C828 /* AppDelegate.swift in Sources */,
 				0AD24BCA2836FCC20048C828 /* SceneDelegate.swift in Sources */,
+				0AF0FB48284FD74800936E33 /* Reachability.swift in Sources */,
 				ED195251284DE63F006BA79E /* RSOTableViewCell.swift in Sources */,
 				ED195255284F2ADF006BA79E /* RegisterViewController.swift in Sources */,
 				7ADA2AC428480DF200909778 /* Event.swift in Sources */,

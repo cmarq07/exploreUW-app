@@ -9,14 +9,14 @@ import Foundation
 
 // MARK: - MajorElement
 class MajorElement: Codable {
-    let majorName: String
-    let majorType: String
-    let college: String
-    let department: String?
-    let tracks: String?
-    let prerequisites: Prerequisites?
-    let minor: Bool
-    let notes: String?
+    var majorName: String
+    var majorType: String
+    var college: String
+    var department: String?
+    var tracks: String?
+    var prerequisites: Prerequisites?
+    var minor: Bool
+    var notes: String?
 
     enum CodingKeys: String, CodingKey {
         case majorName = "major_name"
@@ -38,14 +38,14 @@ class MajorElement: Codable {
 
 // MARK: - Prerequisites
 class Prerequisites: Codable {
-    let minGpa: Double?
-    let minDeptCredits: MinDeptCredits?
-    let applicantLevel, minCoreTechnicalCourse: String?
-    let course: PrerequisitesCourse?
-    let requirement: String?
-    let minDeptGpa: MinDeptGpa?
-    let courses: CoursesUnion?
-    let minDeptCourse: MinDeptCourse?
+    var minGpa: Double?
+    var minDeptCredits: MinDeptCredits?
+    var applicantLevel, minCoreTechnicalCourse: String?
+    var course: PrerequisitesCourse?
+    var requirement: String?
+    var minDeptGpa: MinDeptGpa?
+    var courses: CoursesUnion?
+    var minDeptCourse: MinDeptCourse?
 
     enum CodingKeys: String, CodingKey {
         case minGpa = "min_gpa"
@@ -101,15 +101,15 @@ enum PrerequisitesCourse: Codable {
 
 // MARK: - PurpleCourse
 class PurpleCourse: Codable {
-    let courseName: String
-    let minGpa: Double
+    var courseName: String?
+    var minGpa: Double?
 
     enum CodingKeys: String, CodingKey {
         case courseName = "course_name"
         case minGpa = "min_gpa"
     }
 
-    init(courseName: String, minGpa: Double) {
+    init(courseName: String?, minGpa: Double?) {
         self.courseName = courseName
         self.minGpa = minGpa
     }
@@ -238,16 +238,16 @@ class CoursesClass: Codable {
 
 // MARK: - MinDeptCourse
 class MinDeptCourse: Codable {
-    let dept: String
-    let number: Int
-    let minGpa: Double
+    var dept: String?
+    var number: Int?
+    var minGpa: Double?
 
     enum CodingKeys: String, CodingKey {
         case dept, number
         case minGpa = "min_gpa"
     }
 
-    init(dept: String, number: Int, minGpa: Double) {
+    init(dept: String?, number: Int?, minGpa: Double?) {
         self.dept = dept
         self.number = number
         self.minGpa = minGpa
@@ -256,16 +256,16 @@ class MinDeptCourse: Codable {
 
 // MARK: - MinDeptCredits
 class MinDeptCredits: Codable {
-    let department: String
-    let number: Int
-    let minGpa: Double?
+    var department: String?
+    var number: Int?
+    var minGpa: Double?
 
     enum CodingKeys: String, CodingKey {
         case department, number
         case minGpa = "min_gpa"
     }
 
-    init(department: String, number: Int, minGpa: Double?) {
+    init(department: String?, number: Int?, minGpa: Double?) {
         self.department = department
         self.number = number
         self.minGpa = minGpa
@@ -274,10 +274,10 @@ class MinDeptCredits: Codable {
 
 // MARK: - MinDeptGpa
 class MinDeptGpa: Codable {
-    let dept: String
-    let gpa: Double
+    var dept: String?
+    var gpa: Double?
 
-    init(dept: String, gpa: Double) {
+    init(dept: String?, gpa: Double?) {
         self.dept = dept
         self.gpa = gpa
     }
