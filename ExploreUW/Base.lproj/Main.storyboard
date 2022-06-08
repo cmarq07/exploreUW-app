@@ -339,15 +339,25 @@ Cg
                                     </label>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X6L-kc-7GW">
+                                <rect key="frame" x="354" y="45" width="40" height="40"/>
+                                <color key="tintColor" cyan="0.0" magenta="0.13" yellow="0.42999999999999999" black="0.13" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="imU-yP-iH1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cqg-2A-HVm"/>
                         <color key="backgroundColor" red="0.29411764709999999" green="0.18039215689999999" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="leading" secondItem="Bw9-hc-hMV" secondAttribute="leadingMargin" id="2FE-iw-8kJ"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="leading" secondItem="cqg-2A-HVm" secondAttribute="leading" id="E6g-aO-eYn"/>
+                            <constraint firstItem="g5k-2H-2m5" firstAttribute="top" secondItem="X6L-kc-7GW" secondAttribute="bottom" constant="8" symbolic="YES" id="KPj-Dd-mOz"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="trailing" secondItem="cqg-2A-HVm" secondAttribute="trailing" id="L1D-Lj-peS"/>
                             <constraint firstItem="hJ7-tR-0OD" firstAttribute="top" secondItem="cqg-2A-HVm" secondAttribute="top" id="L3M-is-NJN"/>
                             <constraint firstItem="cqg-2A-HVm" firstAttribute="bottom" secondItem="g5k-2H-2m5" secondAttribute="bottom" constant="15" id="XH6-PZ-Y7Q"/>
+                            <constraint firstItem="X6L-kc-7GW" firstAttribute="top" secondItem="Bw9-hc-hMV" secondAttribute="topMargin" constant="-1" id="lQc-YQ-bKh"/>
+                            <constraint firstItem="hJ7-tR-0OD" firstAttribute="leading" secondItem="Bw9-hc-hMV" secondAttribute="leadingMargin" id="oNP-hP-x23"/>
+                            <constraint firstItem="X6L-kc-7GW" firstAttribute="trailing" secondItem="Bw9-hc-hMV" secondAttribute="trailingMargin" id="r8G-FR-waS"/>
                             <constraint firstItem="g5k-2H-2m5" firstAttribute="top" secondItem="hJ7-tR-0OD" secondAttribute="bottom" constant="19" id="rdh-Cc-bqY"/>
                         </constraints>
                     </view>
@@ -355,6 +365,7 @@ Cg
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="MajorsTable" destination="drq-VA-w1g" id="hfe-w3-S2M"/>
+                        <outlet property="connectionImage" destination="X6L-kc-7GW" id="ab6-Nz-NQY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ME-oe-WV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -596,6 +607,7 @@ Cg
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="wifi" catalog="system" width="128" height="91"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
